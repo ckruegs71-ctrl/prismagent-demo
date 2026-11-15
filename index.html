@@ -61,14 +61,14 @@ a { color: inherit; }
     radial-gradient(60% 45% at 70% 72%, rgba(242,182,90,.18), transparent 70%),
     radial-gradient(80% 60% at 20% 10%, rgba(10,22,40,.0), rgba(10,22,40,.0)); }
 .plane--haze { inset: auto -5% 8% -5%; height: 38%; background: linear-gradient(180deg, transparent, rgba(160,190,225,.16) 55%, rgba(10,22,40,0)); filter: blur(6px); }
-.hero { --ledge: clamp(110px, 19vh, 210px); }
-.plane--ledge { left: 0; right: 0; bottom: -40px; width: 100%; height: calc(var(--ledge) + 40px); object-fit: cover; object-position: 50% 0; }
+.hero { --ledge: clamp(72px, 12vh, 130px); }
+.plane--ledge { left: 0; right: 0; bottom: -40px; width: 100%; height: calc(var(--ledge) + 40px); object-fit: cover; object-position: 50% 0; filter: brightness(.5) saturate(.75) contrast(1.05); }
 .plane--prism { right: 12%; bottom: calc(var(--ledge) - 22px); width: clamp(170px, 17vw, 320px); height: auto; }
 .hero-floor { position: absolute; inset: auto 0 0 0; height: 160px; background: linear-gradient(180deg, transparent, var(--sc-canvas)); pointer-events: none; }
 .hero-scrim { position: absolute; inset: 0 30% 12% 0; background: radial-gradient(85% 85% at 8% 32%, rgba(6,14,28,.86), rgba(6,14,28,.55) 45%, rgba(6,14,28,0) 78%); pointer-events: none; z-index: 2; }
 .hero-beat::before { content: ""; position: absolute; inset: -40px -40px -40px -80px; z-index: -1; background: radial-gradient(closest-side, rgba(6,14,28,.75), rgba(6,14,28,0)); }
 .hero-copy { position: absolute; left: var(--sc-gutter); top: clamp(88px, 12vh, 132px); max-width: min(44rem, 56vw); z-index: 3; }
-.hero-copy h1 { font-size: clamp(2.6rem, 1.4rem + 4.2vw, 5.4rem); max-width: 13ch; }
+.hero-copy h1 { font-size: clamp(2.5rem, 1.2rem + 3.8vw, 5rem); max-width: 13ch; }
 .hero-copy h1 { margin: 0 0 var(--sc-5); }
 .hero-copy .sc-body { max-width: 36rem; color: #DCE7F0; margin: 0; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: var(--sc-4); }
@@ -236,11 +236,11 @@ a { color: inherit; }
 @media (max-width: 700px) {
   .plane--plate { inset: -60px 0 -60px 0; width: 100%; height: calc(100% + 120px); object-position: 50% 50%; }
   .plane--ledge { width: 180%; left: -40%; bottom: -24px; }
-  .plane--prism { right: 6%; bottom: calc(16vw - 24px); width: 34vw; }
+  .plane--prism { right: 6%; bottom: calc(var(--ledge) + 4px); width: 30vw; }
   .hero-copy { top: 84px; max-width: none; right: var(--sc-gutter); }
   .hero-beat { display: none; }
   .hero-actions .btn { width: 100%; }
-  .hero-scrim { inset: 0 0 30% 0; background: linear-gradient(180deg, rgba(7,16,32,.72), rgba(7,16,32,.35) 60%, rgba(7,16,32,0)); }
+  .hero-scrim { inset: 0 0 12% 0; background: linear-gradient(180deg, rgba(7,16,32,.84) 0%, rgba(7,16,32,.7) 45%, rgba(7,16,32,.45) 75%, rgba(7,16,32,0)); }
   .systems { grid-template-columns: 1fr; }
   .sys:nth-child(n) { grid-column: auto; }
   .sys h3 { font-size: var(--sc-t-lg); }
@@ -505,7 +505,7 @@ a { color: inherit; }
 (function () {
   var tray = document.getElementById("night"), clock = document.getElementById("nightClock"), state = document.getElementById("nightState");
   var items = [].slice.call(tray.querySelectorAll(".night__item"));
-  var peak = document.getElementById("build"), close = document.getElementById("assessment");
+  var peak = document.getElementById("build"), close = document.getElementById("assessment"); var heroEl = document.querySelector(".hero");
   var marks = [].slice.call(document.querySelectorAll("[data-night]"));
   // waypoints: [element or fraction, minutes after 5:00 PM]
   function fmt(m) { var h = 5 + Math.floor(m / 60), mm = Math.round(m % 60); if (mm === 60) { h++; mm = 0; } return h + ":" + (mm < 10 ? "0" : "") + mm + " PM"; }
@@ -547,6 +547,9 @@ a { color: inherit; }
     tray.classList.toggle("is-open", inPeak && r.bottom > vh * 0.5);
     tray.classList.toggle("is-chip", r.bottom <= vh * 0.5);
     if (innerWidth <= 700 && r.bottom <= vh * 0.5) tray.classList.add("is-quiet");
+    // short screens: keep the tray off the hero buttons until the hero scrolls away
+    var hr = heroEl.getBoundingClientRect();
+    if (vh < 820 && hr.bottom > vh * 0.55) tray.classList.add("is-quiet");
   }
   var queued = false;
   function onScroll() { if (!queued) { queued = true; requestAnimationFrame(function () { queued = false; tick(); }); } }
