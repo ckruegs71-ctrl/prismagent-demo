@@ -56,15 +56,17 @@ a { color: inherit; }
 /* --------------------------------------------------------------- hero --- */
 .hero .sc-stage, .hero [data-sc-stage] { overflow: hidden; background: #0E2341; }
 .plane { position: absolute; pointer-events: none; max-width: none; user-select: none; }
-.plane--plate { inset: -90px -2% -90px -2%; width: 104%; height: calc(100% + 180px); object-fit: cover; object-position: 50% 62%; }
-.plane--glow { inset: 0; background:
-    radial-gradient(60% 45% at 70% 72%, rgba(242,182,90,.18), transparent 70%),
-    radial-gradient(80% 60% at 20% 10%, rgba(10,22,40,.0), rgba(10,22,40,.0)); }
-.plane--haze { inset: auto -5% 8% -5%; height: 38%; background: linear-gradient(180deg, transparent, rgba(160,190,225,.16) 55%, rgba(10,22,40,0)); filter: blur(6px); }
-.hero { --ledge: clamp(72px, 12vh, 130px); }
-.plane--ledge { left: 0; right: 0; bottom: -40px; width: 100%; height: calc(var(--ledge) + 40px); object-fit: cover; object-position: 50% 0; filter: brightness(.5) saturate(.75) contrast(1.05); }
-.plane--prism { right: 12%; bottom: calc(var(--ledge) - 22px); width: clamp(170px, 17vw, 320px); height: auto; }
-.hero-floor { position: absolute; inset: auto 0 0 0; height: 160px; background: linear-gradient(180deg, transparent, var(--sc-canvas)); pointer-events: none; }
+/* the world: one photo; the evening falls as you scroll (sky darkens, stars, office lights), with a slow push-in */
+.hero { --night: min(1, calc(var(--sc-p, 0) * 1.55)); }
+.plane--world { inset: -60px 0; overflow: hidden; }
+.world { position: absolute; inset: 0; transform: scale(calc(1.02 + var(--sc-p, 0) * .07)); transform-origin: 62% 72%; will-change: transform; }
+.world__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
+.world__night { position: absolute; inset: 0; opacity: calc(var(--night) * .9);
+  background: linear-gradient(180deg, rgba(2,6,17,.92) 0%, rgba(2,6,17,.7) 45%, rgba(2,6,17,.5) 100%); }
+.world__lights { mix-blend-mode: screen; opacity: calc(.15 + var(--night) * .95); }
+.world__stars { opacity: var(--night); }
+.plane--haze { inset: auto -5% 6% -5%; height: 34%; background: linear-gradient(180deg, transparent, rgba(150,180,220,.10) 55%, rgba(10,22,40,0)); filter: blur(8px); }
+.hero-floor { position: absolute; inset: auto 0 0 0; height: 180px; background: linear-gradient(180deg, transparent, var(--sc-canvas)); pointer-events: none; }
 .hero-scrim { position: absolute; inset: 0 30% 12% 0; background: radial-gradient(85% 85% at 8% 32%, rgba(6,14,28,.86), rgba(6,14,28,.55) 45%, rgba(6,14,28,0) 78%); pointer-events: none; z-index: 2; }
 .hero-beat::before { content: ""; position: absolute; inset: -40px -40px -40px -80px; z-index: -1; background: radial-gradient(closest-side, rgba(6,14,28,.75), rgba(6,14,28,0)); }
 .hero-copy { position: absolute; left: var(--sc-gutter); top: clamp(88px, 12vh, 132px); max-width: min(44rem, 56vw); z-index: 3; }
@@ -99,19 +101,17 @@ a { color: inherit; }
 .tension .turnline em { font-style: normal; color: var(--sc-accent); }
 
 /* --------------------------------------------------------------- peak --- */
-.peak .stage { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.6fr); gap: clamp(2rem, 5vw, 5rem);
-  align-content: start; padding: clamp(100px, 16vh, 150px) var(--sc-gutter) 48px;
-  background: radial-gradient(70% 60% at 85% 20%, rgba(0,212,235,.10), transparent 65%), var(--sc-canvas); }
-.peak .lead h2 { margin: 0 0 var(--sc-5); }
-.peak .lead p { color: var(--sc-ink-soft); max-width: 34ch; font-size: var(--sc-t-lg); line-height: 1.5; margin: 0; }
-.systems { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-content: center; }
+.peak { background: radial-gradient(60% 50% at 85% 25%, rgba(0,212,235,.09), transparent 65%); }
+.peak .stage { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.65fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.peak .lead h2 { margin: 0 0 var(--sc-4); }
+.peak .lead p { color: var(--sc-ink-soft); max-width: 36ch; font-size: var(--sc-t-base); line-height: 1.6; margin: 0; }
+.systems { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .sys { position: relative; padding: clamp(18px, 2.2vw, 28px); border-radius: var(--sc-r-lg); background: color-mix(in oklab, var(--sc-surface) 92%, #00D4EB 8%);
   border: 1px solid var(--sc-hairline); box-shadow: var(--sc-e2); }
-.sys:nth-child(1) { grid-column: 1 / 2; }
-.sys:nth-child(2) { grid-column: 2 / 3; transform: translateY(28px); }
-.sys:nth-child(3) { grid-column: 1 / 2; }
-.sys:nth-child(4) { grid-column: 2 / 3; transform: translateY(28px); }
-.sys h3 { margin: 0 0 8px; font: 700 var(--sc-t-xl)/1.1 var(--sc-font-display); letter-spacing: var(--sc-track-snug); }
+.sys { display: flex; flex-direction: column; }
+.sys .ex { margin-top: auto !important; }
+.sys p:not(.ex):not(.links) { margin-bottom: 14px; }
+.sys h3 { margin: 0 0 8px; font: 700 var(--sc-t-lg)/1.15 var(--sc-font-display); letter-spacing: var(--sc-track-snug); }
 .sys p { margin: 0; color: var(--sc-ink-soft); font-size: var(--sc-t-sm); line-height: 1.55; }
 .sys .ex { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--sc-hairline); color: var(--sc-ink); }
 .sys .ex b { color: var(--sc-accent); font-weight: 600; }
@@ -134,22 +134,31 @@ a { color: inherit; }
 .tag { display: inline-block; font: 600 var(--sc-t-xs) var(--sc-font-text); letter-spacing: .08em; text-transform: uppercase; color: var(--sc-accent); margin-bottom: var(--sc-4); }
 
 /* -------------------------------------------------------------- range --- */
-.range .rail { align-items: stretch; gap: 18px; padding: 110px var(--sc-gutter) 56px; height: 100%; }
-.rail__lead { flex: 0 0 min(30rem, 80vw); align-self: center; padding-right: var(--sc-6); }
-.rail__lead h2 { margin: 0 0 var(--sc-4); }
-.rail__lead p { color: var(--sc-ink-soft); margin: 0; max-width: 32ch; line-height: 1.55; }
-.offer { flex: 0 0 clamp(270px, 24vw, 340px); display: flex; flex-direction: column; padding: 26px; border-radius: var(--sc-r-lg);
-  background: var(--sc-surface); border: 1px solid var(--sc-hairline); box-shadow: var(--sc-e2); align-self: center; min-height: min(560px, 70vh); }
-.offer .name { font: 700 var(--sc-t-lg) var(--sc-font-display); margin: 0; }
-.offer .amt { font: 800 var(--sc-t-2xl)/1 var(--sc-font-display); letter-spacing: -0.03em; margin: 12px 0 4px; }
-.offer .amt small { display: block; font: 500 var(--sc-t-sm) var(--sc-font-text); color: var(--sc-ink-soft); letter-spacing: 0; margin-top: 6px; }
-.offer .for { color: var(--sc-ink-soft); font-size: var(--sc-t-sm); line-height: 1.5; margin: 10px 0 16px; }
-.offer ul { list-style: none; margin: 0 0 20px; padding: 0; display: grid; gap: 9px; font-size: var(--sc-t-sm); line-height: 1.45; }
-.offer li { padding-left: 22px; position: relative; }
-.offer li::before { content: ""; position: absolute; left: 2px; top: .5em; width: 9px; height: 5px; border-left: 2px solid var(--sc-accent); border-bottom: 2px solid var(--sc-accent); transform: rotate(-45deg); }
-.offer .btn { margin-top: auto; width: 100%; }
-.offer--free { border-color: color-mix(in oklab, var(--sc-accent) 60%, transparent); }
-.offer .note { font-size: var(--sc-t-xs); color: var(--sc-ink-soft); margin: -8px 0 16px; line-height: 1.45; }
+.range { padding-block: clamp(4rem, 8vh, 6.5rem); }
+.range__head { display: flex; align-items: end; justify-content: space-between; gap: 2rem; flex-wrap: wrap; margin-bottom: clamp(1.5rem, 3.5vh, 2.5rem); }
+.range__head h2 { margin: 0; }
+.range__head p { margin: 0; color: var(--sc-ink-soft); max-width: 44ch; line-height: 1.55; }
+.offers { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.offer { display: flex; flex-direction: column; padding: clamp(18px, 1.6vw, 24px); border-radius: var(--sc-r-lg);
+  background: var(--sc-surface); border: 1px solid var(--sc-hairline); box-shadow: var(--sc-e2); }
+.offer .name { font: 700 var(--sc-t-base)/1.2 var(--sc-font-display); margin: 0; }
+.offer .amt { font: 800 clamp(1.6rem, 1.1rem + 1vw, 2.1rem)/1 var(--sc-font-display); letter-spacing: -0.03em; margin: 10px 0 0; }
+.offer .amt small { display: block; font: 500 var(--sc-t-xs) var(--sc-font-text); color: var(--sc-ink-soft); letter-spacing: 0; margin-top: 6px; }
+.offer .for { color: var(--sc-ink-soft); font-size: var(--sc-t-xs); line-height: 1.5; margin: 10px 0 12px; }
+.offer ul { list-style: none; margin: 0 0 16px; padding: 12px 0 0; border-top: 1px solid var(--sc-hairline); display: grid; gap: 7px; font-size: var(--sc-t-xs); line-height: 1.45; }
+.offer li { padding-left: 20px; position: relative; }
+.offer li::before { content: ""; position: absolute; left: 2px; top: .45em; width: 8px; height: 4px; border-left: 2px solid var(--sc-accent); border-bottom: 2px solid var(--sc-accent); transform: rotate(-45deg); }
+.offer .btn { margin-top: auto; width: 100%; min-height: 44px; }
+.offer--free { border-color: color-mix(in oklab, var(--sc-accent) 60%, transparent); background: color-mix(in oklab, var(--sc-surface) 90%, #00D4EB 10%); }
+.offer .note { font-size: var(--sc-t-xs); color: var(--sc-ink-soft); margin: -6px 0 14px; line-height: 1.45; }
+.offer--wide { margin-top: 14px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) auto; gap: clamp(1rem, 3vw, 2.5rem); align-items: center; }
+.offer--wide .kicker { margin: 0 0 6px; font: 600 var(--sc-t-xs) var(--sc-font-text); letter-spacing: .08em; text-transform: uppercase; color: var(--sc-accent); }
+.offer--wide .amt { margin-top: 6px; }
+.offer--wide .for { margin: 0 0 10px; font-size: var(--sc-t-sm); }
+.offer--wide ul { grid-template-columns: 1fr 1fr; margin: 0; padding: 0; border: 0; column-gap: 20px; }
+.offer--wide .btn { width: auto; margin: 0; }
+@media (max-width: 1100px) { .offers { grid-template-columns: repeat(2, minmax(0, 1fr)); } .offer--wide { grid-template-columns: 1fr; } .offer--wide .btn { justify-self: start; } }
+@media (max-width: 620px) { .offers { grid-template-columns: 1fr; } .offer--wide ul { grid-template-columns: 1fr; } .offer--wide .btn { width: 100%; } }
 
 /* ------------------------------------------------------------ reality --- */
 .reality .cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2.5rem, 7vw, 7rem); }
@@ -211,38 +220,35 @@ a { color: inherit; }
 .night.is-chip .night__list, .night.is-chip .night__label { display: none; }
 .night.is-chip .night__state { margin: 2px 0 0; }
 .night.is-quiet { opacity: 0; transform: translateY(10px); pointer-events: none; }
+.night--inline { position: relative; left: auto; bottom: auto; z-index: auto; width: auto; max-width: 25rem; margin-top: clamp(1.25rem, 3vh, 2rem);
+  background: rgba(255,255,255,.03); backdrop-filter: none; -webkit-backdrop-filter: none; box-shadow: none; opacity: 1 !important; transform: none !important; pointer-events: auto; }
+.night--inline .night__item { display: grid !important; opacity: 1; transform: none; }
+.peak .lead .night__state { margin: 6px 0 8px; font-size: .8rem; font-weight: 600; color: var(--amber); max-width: none; line-height: 1.4; }
+.peak .lead .night--inline.is-handled .night__state { color: var(--sc-accent); }
 @media (max-width: 700px) {
-  .night { left: 10px; right: 10px; bottom: 10px; width: auto; padding: 10px 12px; border-radius: 14px; }
-  .night__list { display: block; }
-  .night__item { display: none !important; }
-  .night__item.is-latest { display: grid !important; margin-top: 4px; }
-  .night__state { margin: 4px 0 0; }
+  .night:not(.night--inline) { left: 10px; right: 10px; bottom: 10px; width: auto; padding: 10px 12px; border-radius: 14px; }
+  .night:not(.night--inline) .night__list { display: block; }
+  .night:not(.night--inline) .night__item { display: none !important; }
+  .night:not(.night--inline) .night__item.is-latest { display: grid !important; margin-top: 4px; }
+  .night:not(.night--inline) .night__state { margin: 4px 0 0; }
 }
 
 /* ------------------------------------------------------------ mobile --- */
 @media (max-width: 900px) {
-  .peak .stage { grid-template-columns: 1fr; align-content: start; padding-top: 84px; gap: 18px; }
+  .peak .stage { grid-template-columns: 1fr; gap: 28px; }
   .peak .lead p { font-size: var(--sc-t-base); }
-  .systems { grid-template-columns: 1fr 1fr; gap: 10px; }
-  .sys:nth-child(2), .sys:nth-child(4) { transform: none; }
-  .sys p { display: none; }
-  .sys p.ex { display: block; }
-  .sys .ex { margin-top: 8px; padding-top: 8px; font-size: var(--sc-t-xs); }
-  .sys .links { display: none; }
   .proof .grid, .reality .cols { grid-template-columns: 1fr; }
   .leak { grid-template-columns: 1fr; gap: 12px; }
   .leak:nth-of-type(2), .leak:nth-of-type(3) { margin-left: 0; }
 }
 @media (max-width: 700px) {
-  .plane--plate { inset: -60px 0 -60px 0; width: 100%; height: calc(100% + 120px); object-position: 50% 50%; }
-  .plane--ledge { width: 180%; left: -40%; bottom: -24px; }
-  .plane--prism { right: 6%; bottom: calc(var(--ledge) + 4px); width: 30vw; }
+  .world__img { object-position: 50% 55%; }
+  .world { transform-origin: 50% 70%; }
   .hero-copy { top: 84px; max-width: none; right: var(--sc-gutter); }
   .hero-beat { display: none; }
   .hero-actions .btn { width: 100%; }
   .hero-scrim { inset: 0 0 12% 0; background: linear-gradient(180deg, rgba(7,16,32,.84) 0%, rgba(7,16,32,.7) 45%, rgba(7,16,32,.45) 75%, rgba(7,16,32,0)); }
-  .systems { grid-template-columns: 1fr; }
-  .sys:nth-child(n) { grid-column: auto; }
+  .systems { grid-template-columns: 1fr; gap: 12px; }
   .sys h3 { font-size: var(--sc-t-lg); }
   .foot { position: static; }
   .close { align-content: stretch; grid-template-rows: 1fr auto; padding-top: 64px; } .close__inner { align-self: center; }
@@ -268,15 +274,18 @@ a { color: inherit; }
 
 <main id="top">
 
-  <!-- 1 · RECOGNITION: pin + five-plane parallax -->
+  <!-- 1 · RECOGNITION: pin + parallax; the evening falls over the city -->
   <section class="hero" data-sc-act="pin" data-sc-span="1.9" data-sc-drift="#0E2341">
     <div data-sc-stage>
-      <picture>
-        <source media="(max-width: 700px)" srcset="assets/hero-plate-m.webp">
-        <img class="plane plane--plate" src="assets/hero-plate.webp" alt="" data-sc-parallax="-0.7">
-      </picture>
-      <div class="plane plane--glow" data-sc-parallax="-0.4" aria-hidden="true"></div>
-      <div class="plane plane--haze" data-sc-parallax="0.4" aria-hidden="true"></div>
+      <div class="plane plane--world" data-sc-parallax="-0.6" aria-hidden="true">
+        <div class="world">
+          <picture><source media="(max-width: 700px)" srcset="assets/hero-plate-m.webp"><img class="world__img" src="assets/hero-plate.webp" alt="" fetchpriority="high"></picture>
+          <div class="world__night"></div>
+          <picture><source media="(max-width: 700px)" srcset="assets/hero-stars-m.webp"><img class="world__img world__stars" src="assets/hero-stars.webp" alt=""></picture>
+          <picture><source media="(max-width: 700px)" srcset="assets/hero-lights-m.webp"><img class="world__img world__lights" src="assets/hero-lights.webp" alt=""></picture>
+        </div>
+      </div>
+      <div class="plane plane--haze" data-sc-parallax="0.3" aria-hidden="true"></div>
       <div class="hero-scrim" aria-hidden="true"></div>
 
       <div class="hero-copy" data-sc-cue="0 0.6 0">
@@ -290,11 +299,9 @@ a { color: inherit; }
       </div>
 
       <div class="hero-beat" data-sc-cue="0.42 0.98 0.12 0.2" aria-hidden="true">
-        <p>It's 5:00 PM. The office is closing. <span>Your customers are just getting started.</span></p>
+        <p>The office is closing. <span>Your customers are just getting started.</span></p>
       </div>
 
-      <img class="plane plane--prism" src="assets/hero-prism.webp" alt="" data-sc-parallax="1.3">
-      <img class="plane plane--ledge" src="assets/hero-ledge.webp" alt="" data-sc-parallax="1.3">
       <div class="hero-floor" aria-hidden="true"></div>
     </div>
   </section>
@@ -321,31 +328,41 @@ a { color: inherit; }
     </div>
   </section>
 
-  <!-- 3 · TURN (PEAK): pin + reveal, the night shift resolves here -->
-  <section class="peak" id="build" data-sc-act="pin" data-sc-span="4.2" data-sc-drift="#0A1A30">
-    <div data-sc-stage class="stage">
-      <div class="lead" data-sc-cue="0 1 0 0.04">
-        <h2 class="sc-display sc-display--lg">Then the work starts doing itself.</h2>
+  <!-- 3 · TURN (PEAK): all four systems land together; the night shift resolves here -->
+  <section class="sc-section peak" id="build" data-sc-act="flow" data-sc-drift="#0A1A30">
+    <div class="sc-wrap stage">
+      <div class="lead" data-sc-in>
+        <h2 class="sc-display sc-display--md">Then the work starts doing itself.</h2>
         <p>Four kinds of systems, built inside the tools you already pay for. AI does the typing. Your people make the decisions, and the math runs in code.</p>
+        <div class="night night--inline" id="nightInline" aria-hidden="true">
+          <div class="night__top"><span class="night__clock js-clock">8:12 PM</span><span class="night__label">Example evening</span></div>
+          <p class="night__state js-state">4 things slipping while you're out</p>
+          <ul class="night__list">
+            <li class="night__item is-in" data-k="1"><time>5:47 PM</time><span class="what">Customer call<span class="st" data-miss="Went to voicemail" data-done="Answered by Aria, booked Fri 10:00">Went to voicemail</span></span></li>
+            <li class="night__item is-in" data-k="2"><time>6:30 PM</time><span class="what">Quote request<span class="st" data-miss="Waiting on you" data-done="Proposal built and sent">Waiting on you</span></span></li>
+            <li class="night__item is-in" data-k="3"><time>7:15 PM</time><span class="what">Weekly report<span class="st" data-miss="Still typing" data-done="Built and published">Still typing</span></span></li>
+            <li class="night__item is-in" data-k="4"><time>8:12 PM</time><span class="what">Website visitor<span class="st" data-miss="Left with a question" data-done="Answered, lead captured">Left with a question</span></span></li>
+          </ul>
+        </div>
       </div>
-      <div class="systems">
-        <article class="sys" data-sc-reveal="left" data-sc-reveal-at="0.08 0.22">
+      <div class="systems" data-sc-in data-sc-stagger="70">
+        <article class="sys">
           <h3>Documents that build themselves</h3>
           <p>Reports, proposals, contracts, work orders and decks, made from your data in your own templates, word for word. Your people check them and send them.</p>
           <p class="ex"><b>Example:</b> a weekly market report that's ready about 2 minutes after the data drops.</p>
         </article>
-        <article class="sys" data-sc-reveal="left" data-sc-reveal-at="0.28 0.42">
+        <article class="sys">
           <h3>Your numbers, out of the software</h3>
           <p>Dashboards and weekly briefs pulled from the programs you already pay for, so you can see which customers, crews and services make you money.</p>
           <p class="ex"><b>Example:</b> a client dashboard that refreshes itself minutes after a government data release.</p>
         </article>
-        <article class="sys" data-sc-reveal="left" data-sc-reveal-at="0.48 0.62">
+        <article class="sys">
           <h3>Every call and lead answered</h3>
           <p>AI voice agents, an AI receptionist on your website and follow-up that runs on its own, so a lead at 8 PM gets an answer at 8 PM.</p>
           <p class="ex"><b>Example:</b> Aria, our own AI receptionist, answers this website day and night.</p>
           <p class="links"><button type="button" data-aria>Talk to Aria</button><a href="ai-receptionist.html">See how it works</a></p>
         </article>
-        <article class="sys" data-sc-reveal="left" data-sc-reveal-at="0.68 0.82">
+        <article class="sys">
           <h3>Private AI and a trained team</h3>
           <p>For firms that can't send client data to the cloud, AI that stays in the building. Plus hands-on training so your staff actually use it.</p>
           <p class="ex"><b>Example:</b> built for firms where client confidentiality isn't optional.</p>
@@ -387,51 +404,56 @@ a { color: inherit; }
     </div>
   </section>
 
-  <!-- 5 · RANGE: pan -->
-  <section class="range" id="start" data-sc-act="pan" data-sc-span="3.4" data-sc-drift="#081322">
-    <div data-sc-stage>
-      <div class="rail" data-sc-pan="0.06">
-        <div class="rail__lead">
-          <h2 class="sc-display sc-display--md">Ways to start.</h2>
-          <p>Start free and go as far as the numbers say. Chad confirms the right fit on a short call before anything is billed.</p>
-        </div>
-        <article class="offer offer--free">
-          <h3 class="name">Free AI assessment</h3>
-          <p class="amt">$0</p>
-          <p class="for">For owners who want to know where the money is leaking.</p>
-          <ul><li>A short interview with Aria, our AI voice agent, day or night</li><li>No pitch</li><li>Written report in 2 business days</li></ul>
-          <a class="btn btn--accent" href="https://www.prismagentsolutions.com/missed-call-calculator#assessment" data-assess>Get your free AI assessment</a>
-        </article>
-        <article class="offer">
-          <h3 class="name">Discovery Sprint</h3>
-          <p class="amt">$497</p>
-          <p class="for">For owners ready to rank their best opportunities.</p>
-          <ul><li>60-minute structured discovery call</li><li>Custom ROI analysis of every workflow we find</li><li>Written summary within 48 hours</li><li>Your top 3 to 5 opportunities, ranked</li></ul>
-          <a class="btn btn--ghost" data-book href="#">Book a call</a>
-        </article>
-        <article class="offer">
-          <h3 class="name">Audit + ROI Model</h3>
-          <p class="amt">$1,997</p>
-          <p class="for">For owners planning a real build.</p>
-          <ul><li>Everything in the Discovery Sprint</li><li>A full audit and a scored ROI model</li><li>Executive summary with the top 3 builds and cost estimates</li><li>60-minute review call</li></ul>
-          <p class="note">The $497 Sprint fee is credited back if you move to implementation within 30 days.</p>
-          <a class="btn btn--ghost" data-book href="#">Book a call</a>
-        </article>
-        <article class="offer">
-          <h3 class="name">Implementation</h3>
-          <p class="amt">Custom scope<small>Quoted after discovery</small></p>
-          <p class="for">Every build is engineered around your operation, so the investment is set by what we build, the systems it connects to and the return it's projected to deliver.</p>
-          <ul><li>Built inside your tools and templates</li><li>A person checks what matters</li><li>Measured in dollars before and after</li></ul>
-          <a class="btn btn--ghost" data-book href="#">Book a call</a>
-        </article>
-        <article class="offer">
-          <h3 class="name">Website Concierge</h3>
-          <p class="amt">Free 30 days<small>then from $397 a month</small></p>
-          <p class="for">An AI receptionist for businesses whose website leads wait until morning.</p>
-          <ul><li>Answers visitors by chat or voice, day or night</li><li>Books the next step on your calendar</li><li>Full setup included, no setup fee</li><li>Month-to-month, no contract</li></ul>
+  <!-- 5 · RANGE: every option on one screen -->
+  <section class="sc-section range" id="start" data-sc-act="flow" data-sc-drift="#081322">
+    <div class="sc-wrap">
+      <header class="range__head" data-sc-in>
+        <h2 class="sc-display sc-display--md">Ways to start.</h2>
+        <p>Start free and go as far as the numbers say. Chad confirms the right fit on a short call before anything is billed.</p>
+      </header>
+      <div class="offers" data-sc-in data-sc-stagger="60">
+          <article class="offer offer--free">
+            <h3 class="name">Free AI assessment</h3>
+            <p class="amt">$0</p>
+            <p class="for">For owners who want to know where the money is leaking.</p>
+            <ul><li>A short interview with Aria, our AI voice agent, day or night</li><li>No pitch</li><li>Written report in 2 business days</li></ul>
+            <a class="btn btn--accent" href="https://www.prismagentsolutions.com/missed-call-calculator#assessment" data-assess>Get your free AI assessment</a>
+          </article>
+          <article class="offer">
+            <h3 class="name">Discovery Sprint</h3>
+            <p class="amt">$497</p>
+            <p class="for">For owners ready to rank their best opportunities.</p>
+            <ul><li>60-minute structured discovery call</li><li>Custom ROI analysis of every workflow we find</li><li>Written summary within 48 hours</li><li>Your top 3 to 5 opportunities, ranked</li></ul>
+            <a class="btn btn--ghost" data-book href="#">Book a call</a>
+          </article>
+          <article class="offer">
+            <h3 class="name">Audit + ROI Model</h3>
+            <p class="amt">$1,997</p>
+            <p class="for">For owners planning a real build.</p>
+            <ul><li>Everything in the Discovery Sprint</li><li>A full audit and a scored ROI model</li><li>Executive summary with the top 3 builds and cost estimates</li><li>60-minute review call</li></ul>
+            <p class="note">The $497 Sprint fee is credited back if you move to implementation within 30 days.</p>
+            <a class="btn btn--ghost" data-book href="#">Book a call</a>
+          </article>
+          <article class="offer">
+            <h3 class="name">Implementation</h3>
+            <p class="amt">Custom scope<small>Quoted after discovery</small></p>
+            <p class="for">Every build is engineered around your operation, so the investment is set by what we build, the systems it connects to and the return it's projected to deliver.</p>
+            <ul><li>Built inside your tools and templates</li><li>A person checks what matters</li><li>Measured in dollars before and after</li></ul>
+            <a class="btn btn--ghost" data-book href="#">Book a call</a>
+          </article>
+      </div>
+        <article class="offer offer--wide" data-sc-in>
+          <div class="ow__head">
+            <p class="kicker">AI receptionist</p>
+            <h3 class="name">Website Concierge</h3>
+            <p class="amt">Free 30 days<small>then from $397 a month</small></p>
+          </div>
+          <div class="ow__body">
+            <p class="for">An AI receptionist for businesses whose website leads wait until morning.</p>
+            <ul><li>Answers visitors by chat or voice, day or night</li><li>Books the next step on your calendar</li><li>Full setup included, no setup fee</li><li>Month-to-month, no contract</li></ul>
+          </div>
           <a class="btn btn--ghost" href="ai-receptionist.html">See the AI receptionist</a>
         </article>
-      </div>
     </div>
   </section>
 
@@ -488,8 +510,8 @@ a { color: inherit; }
 
 <!-- signature move: the night shift (decorative mirror of the page's story; the same facts are in the peak section as text) -->
 <aside class="night" id="night" aria-hidden="true">
-  <div class="night__top"><span class="night__clock" id="nightClock">5:00 PM</span><span class="night__label">Example evening</span></div>
-  <p class="night__state" id="nightState">Closing time. Nothing missed yet.</p>
+  <div class="night__top"><span class="night__clock js-clock" id="nightClock">5:00 PM</span><span class="night__label">Example evening</span></div>
+  <p class="night__state js-state" id="nightState">Closing time. Nothing missed yet.</p>
   <ul class="night__list">
     <li class="night__item" data-k="1"><time>5:47 PM</time><span class="what">Customer call<span class="st" data-miss="Went to voicemail" data-done="Answered by Aria, booked Fri 10:00">Went to voicemail</span></span></li>
     <li class="night__item" data-k="2"><time>6:30 PM</time><span class="what">Quote request<span class="st" data-miss="Waiting on you" data-done="Proposal built and sent">Waiting on you</span></span></li>
@@ -503,51 +525,63 @@ a { color: inherit; }
 <script>
 /* Night shift: the page keeps the clock. Bespoke to this page; reads layout only, never edits the engine. */
 (function () {
-  var tray = document.getElementById("night"), clock = document.getElementById("nightClock"), state = document.getElementById("nightState");
+  var tray = document.getElementById("night"), inline = document.getElementById("nightInline");
+  var clocks = [].slice.call(document.querySelectorAll(".js-clock")), states = [].slice.call(document.querySelectorAll(".js-state"));
+  var inItems = [].slice.call(inline.querySelectorAll(".night__item"));
   var items = [].slice.call(tray.querySelectorAll(".night__item"));
-  var peak = document.getElementById("build"), close = document.getElementById("assessment"); var heroEl = document.querySelector(".hero");
+  var peak = document.getElementById("build"), grid = peak.querySelector(".systems"), close = document.getElementById("assessment"), heroEl = document.querySelector(".hero");
   var marks = [].slice.call(document.querySelectorAll("[data-night]"));
-  // waypoints: [element or fraction, minutes after 5:00 PM]
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   function fmt(m) { var h = 5 + Math.floor(m / 60), mm = Math.round(m % 60); if (mm === 60) { h++; mm = 0; } return h + ":" + (mm < 10 ? "0" : "") + mm + " PM"; }
-  var flips = { 2: 0.20, 3: 0.24, 1: 0.58, 4: 0.62 };   // peak progress at which each item is handled
-  var shown = 0, done = {};
+  // once the four systems are on screen, the evening's misses get handled one after another
+  var handledN = 0, timers = [], cascading = false;
+  function cascade() {
+    if (cascading || handledN === 4) return; cascading = true;
+    [0, 1, 2, 3].forEach(function (i) { timers.push(setTimeout(function () { handledN = Math.max(handledN, i + 1); tick(); if (i === 3) cascading = false; }, reduce ? 0 : 450 + i * 520)); });
+  }
+  function reset() { timers.forEach(clearTimeout); timers = []; cascading = false; handledN = 0; }
   function center(el) { var r = el.getBoundingClientRect(); return r.top + r.height / 2; }
   function tick() {
     var vh = innerHeight, mid = vh * 0.62;
-    // which leaks have crossed the reading line
     var passed = 0; marks.forEach(function (m) { if (center(m) < mid) passed = Math.max(passed, +m.getAttribute("data-night")); });
     var heroOut = window.scrollY > vh * 0.55;
     var count = passed ? passed : (heroOut ? 1 : 0);
-    // peak progress
-    var r = peak.getBoundingClientRect(), span = r.height - vh, p = span > 0 ? Math.min(1, Math.max(0, -r.top / span)) : 0;
-    var inPeak = r.top <= 0;
-    if (inPeak) count = 4;
+    var g = grid.getBoundingClientRect(), r = peak.getBoundingClientRect(), ib = inline.getBoundingClientRect();
+    var gridSeen = (g.top < vh * 0.72 && g.bottom > vh * 0.2) || (ib.top < vh * 0.78 && ib.bottom > vh * 0.15);
+    if (gridSeen || g.bottom <= vh * 0.2) count = 4;
+    if (gridSeen) cascade();
+    if (g.bottom <= vh * 0.2 && handledN < 4) { reset(); handledN = 4; }
+    if (g.top > vh * 1.05 && handledN) reset();
     items.forEach(function (it) { var k = +it.getAttribute("data-k"); it.classList.toggle("is-in", k <= count); it.classList.toggle("is-latest", k === count); });
     var handled = 0;
     items.forEach(function (it) {
-      var k = +it.getAttribute("data-k"), st = it.querySelector(".st"), d = inPeak && p >= flips[k];
-      if (r.bottom < vh) d = true;
+      var k = +it.getAttribute("data-k"), st = it.querySelector(".st"), d = k <= handledN;
       it.classList.toggle("is-done", d); st.textContent = d ? st.getAttribute("data-done") : st.getAttribute("data-miss"); if (d) handled++;
     });
-    // clock: 5:00 at top, 8:12 at the last leak, 8:40 at the end of the peak, 9:40 at the bottom
+    inItems.forEach(function (it) { var k = +it.getAttribute("data-k"), st = it.querySelector(".st"), d = k <= handledN;
+      it.classList.toggle("is-done", d); st.textContent = d ? st.getAttribute("data-done") : st.getAttribute("data-miss"); });
+    inline.classList.toggle("is-handled", handledN === 4);
+    // clock: 5:00 at the top, 8:12 at the last leak, about 8:40 once everything is handled, 9:40 at the bottom
     var doc = document.documentElement, maxY = doc.scrollHeight - vh, y = window.scrollY;
-    var peakTop = peak.offsetTop, peakEnd = peakTop + peak.offsetHeight - vh, last = marks[marks.length - 1];
-    var lastY = last.offsetTop + last.offsetHeight / 2 - mid + 0;
+    var last = marks[marks.length - 1], lastY = last.offsetTop + last.offsetHeight / 2 - mid;
+    var peakEnd = peak.offsetTop + peak.offsetHeight - vh * 0.5;
     var mins;
     if (y <= lastY) mins = 192 * Math.max(0, y) / Math.max(1, lastY);
     else if (y <= peakEnd) mins = 192 + 28 * (y - lastY) / Math.max(1, peakEnd - lastY);
     else mins = 220 + 60 * (y - peakEnd) / Math.max(1, maxY - peakEnd);
-    clock.textContent = fmt(Math.min(280, Math.max(0, mins)));
+    var tstr = fmt(Math.min(280, Math.max(0, mins))); clocks.forEach(function (c) { c.textContent = tstr; });
     var missed = items.filter(function (it) { return it.classList.contains("is-in") && !it.classList.contains("is-done"); }).length;
     tray.classList.toggle("is-handled", handled > 0 && missed === 0);
-    state.textContent = handled === 4 ? "All 4 handled while you were out" : handled > 0 ? handled + " handled, " + missed + " to go" : count === 0 ? "Closing time. Nothing missed yet." : count + (count === 1 ? " thing" : " things") + " slipping while you're out";
-    // step aside for the final call to action
+    var stext = handled === 4 ? "All 4 handled while you were out" : handled > 0 ? handled + " handled, " + missed + " to go" : count === 0 ? "Closing time. Nothing missed yet." : count + (count === 1 ? " thing" : " things") + " slipping while you're out";
+    document.getElementById("nightState").textContent = stext;
+    inline.querySelector(".js-state").textContent = handledN === 4 ? "All 4 handled while you were out" : handledN ? handledN + " handled, " + (4 - handledN) + " to go" : "4 things slipping while you're out";
+    var after = r.bottom <= vh * 0.5;
+    tray.classList.remove("is-open");
+    var inlineOn = ib.top < vh * 0.95 && ib.bottom > 60;
+    tray.classList.toggle("is-chip", after);
     var cr = close.getBoundingClientRect();
-    tray.classList.toggle("is-quiet", cr.top < vh * 0.35);
-    tray.classList.toggle("is-open", inPeak && r.bottom > vh * 0.5);
-    tray.classList.toggle("is-chip", r.bottom <= vh * 0.5);
-    if (innerWidth <= 700 && r.bottom <= vh * 0.5) tray.classList.add("is-quiet");
-    // short screens: keep the tray off the hero buttons until the hero scrolls away
+    tray.classList.toggle("is-quiet", cr.top < vh * 0.35 || inlineOn || (g.top < vh && g.bottom > 0 && innerWidth > 900));
+    if (innerWidth <= 700 && after) tray.classList.add("is-quiet");
     var hr = heroEl.getBoundingClientRect();
     if (vh < 820 && hr.bottom > vh * 0.55) tray.classList.add("is-quiet");
   }
