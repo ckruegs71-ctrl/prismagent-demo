@@ -1,0 +1,147 @@
+# PrismAgent Solutions
+
+> PrismAgent Solutions builds custom AI systems for small and mid-size businesses across the United States: reports that publish themselves, proposals and work orders that build themselves, numbers pulled out of old software into dashboards owners actually read, and calls and leads answered day or night. Built inside the client's own tools, checked by their people, measured in dollars. Founded by Chad Krueger. Based in Lakeville, Minnesota. Serves clients nationwide, remotely.
+
+## Key facts
+- Company: PrismAgent Solutions LLC
+- Founder: Chad Krueger
+- Phone: (612) 405-9802
+- Email: Chad@PrismAgentSolutions.com
+- Book a call: https://api.leadconnectorhq.com/widget/booking/w3Rrw2m6EQeMJAcexF9i
+- Who it serves: owner-led businesses from one person to about 100 employees, including home services and contractors, landscaping, law firms, accounting firms, insurance agencies, property management, staffing, agriculture and commodities, and real estate.
+
+## What PrismAgent builds
+- Documents that build themselves: reports, proposals, contracts, work orders and decks generated from the client's data in the client's own templates, checked by a person before they go out.
+- The numbers, out of the software: dashboards and weekly briefs pulled from programs the business already pays for.
+- Every call and lead answered: AI voice agents, the Website Concierge AI receptionist, and follow-up that runs on its own.
+- Private AI and a trained team: AI that keeps client data on equipment in the client's building, plus hands-on staff training.
+
+## How PrismAgent works (S.C.A.N.)
+- Study: learn how the business actually runs, starting with a short interview with Aria (PrismAgent's AI voice agent).
+- Calculate: put a dollar number on each leak before recommending anything. Every build gets a North Star metric: baseline, target and date.
+- Architect: design and build inside the client's tools; the math runs in code, never in the AI; a person checks what matters.
+- Narrate: measure before and after and show what changed.
+
+## Pricing (as of November 2026)
+- Free AI assessment: $0. A short interview with Aria and a written report within 2 business days.
+- Discovery Sprint: $497. 60-minute discovery call, ROI analysis, top 3 to 5 opportunities ranked, written summary within 48 hours.
+- Audit + ROI Model: $1,997. Full audit, scored ROI model, top 3 builds with cost estimates, review call. The $497 Sprint fee is credited back if the client moves to implementation within 30 days.
+- Implementation: custom scope, quoted after discovery.
+- Website Concierge (AI receptionist): free 30-day trial with full setup, no setup fee, no contract; then Core $397 a month, Plus $797 a month, Pro custom.
+
+## Proof (anonymized, from real client work)
+- A one-person commodity advisory firm's weekly report went from about 90 minutes after the government data release (typed by hand) to about 2 minutes after release. The firm also gets a morning market brief that builds itself every day at 7:30 AM.
+- A 34-year landscaping company's aeration proposals (about 55 a season) generate themselves, go out for e-signature and file themselves when signed; its bids turn into crew work orders without retyping, with the material list computed in code.
+
+## Main pages
+- [Home](https://www.prismagentsolutions.com/): the full story, services, pricing, industries and contact
+- [AI Receptionist](https://www.prismagentsolutions.com/ai-receptionist): Website Concierge plans, examples and FAQ
+- [Missed Call Revenue Calculator](https://www.prismagentsolutions.com/missed-call-calculator): free tool, no email required; also the free AI assessment
+- [FAQ](https://www.prismagentsolutions.com/faq): answers on cost, getting started, timelines, data privacy
+- [Blog](https://www.prismagentsolutions.com/blog): practical AI for small business, 70 articles
+- [The Small Business Owner's Guide to AI](https://www.prismagentsolutions.com/blog/small-business-owners-guide-to-ai): cornerstone guide
+
+## Frequently asked questions
+- What does PrismAgent Solutions do? We build custom AI systems that take the hand-typed work out of the jobs that make a business money: reports and proposals that build themselves, numbers pulled out of the software you already use, and calls and leads answered day or night. Every system is built inside your own tools and templates, a person on your team checks what matters, and every build is measured in dollars before and after.
+- Where should I start if I have never done any automation? Lead capture and response, in almost every case. It carries the biggest dollar losses, it's the fastest to build, and the results show up within days: calls that used to hit voicemail start turning into booked appointments. Before building anything, find out how many calls you miss after hours and how many quotes went quiet last month. Those two numbers tell you where your money's leaking and give you a baseline to measure against. Skip the fancy stuff. Start where the bleeding is.
+- Can AI automation work for my type of business? If your business takes inquiries, sends quotes or proposals, books appointments, serves clients, and benefits from reviews and referrals, then yes. Contractors, law firms, medical and dental clinics, agencies, accountants, and the trades all run on the same basic functions. Only the vocabulary and the deal sizes change. A $250 service call and a $50,000 remodel need different follow-up timing, but both need follow-up that goes out without anyone remembering.
+- Do I need technical skills to use AI automation in my business? No. The system gets built once, by someone who knows how, and then it runs in the background while you and your team work the way you already work. Your job afterward is reading a weekly report, responding when the system flags something for a human, and approving the occasional tweak. If you can read a text and click a link, you're qualified.
+- Do I need to change the software I use? No. We build inside the tools and templates you already have, so your team keeps working the way it does today.
+- How much does it cost? The AI assessment is free. The Discovery Sprint is $497 and the Audit + ROI Model is $1,997, and the $497 Sprint fee is credited back if you move to implementation within 30 days. Implementation is quoted after discovery, because every build is engineered around your operation. The Website Concierge, our AI receptionist, is free for 30 days and then starts at $397 a month, with full setup included and no contract.
+- How do I know if AI automation is actually worth it? Measure it in revenue, not in busy-looking numbers. Before we build anything, every project gets one number to move, stated as a baseline, a target and a date. Example: you get 5 leads a week today. If this build gets you to 15 within two months, was it worth it? A properly built system reports those numbers to you automatically, so the answer to "is this working" shows up in your inbox every Monday instead of requiring an investigation.
+- What's the difference between the Discovery Sprint and the Audit + ROI Model? The Discovery Sprint ($497) is a 60-minute structured discovery call, an ROI analysis of every workflow we find, and a written summary within 48 hours with your top 3 to 5 opportunities ranked. The Audit + ROI Model ($1,997) adds a full audit, a scored ROI model for every workflow, an executive summary with the top 3 builds and cost estimates, and a 60-minute review call.
+- Will the AI make mistakes with my numbers? The math runs in code, never in the AI, and a person on your team checks what matters before anything goes out.
+- How long does it take to set up? A single build, like missed-call text-back plus after-hours call answering, is typically live within two to four weeks. A fuller build usually lands somewhere in one to three months, depending on how many tools need connecting and how custom your sales process is. Honestly, the slowest part of most projects isn't the technology. It's collecting your scripts, pricing and process details so the system sounds like your business instead of a template.
+- What if my team resists the change? People resist automation when they think it's coming for their jobs, so lead with what it actually does: it kills the work they already hate. Nobody on your staff loves hand-texting reminders, chasing unfinished paperwork, or copying lead info between systems. In my experience the resistance lasts right up until the first week the system catches a lead or fills a cancellation that would've been lost, because at that point the team sees it making their numbers better.
+- Should I hire a consultant or buy the software myself? Buying software gets you raw materials. Hiring a consultant gets you a working system, built faster, without you burning your evenings learning automation software. The do-it-yourself route is real if you've got the time and the interest. The honest tradeoff is time and failure risk: owners who build it themselves usually spend months getting to what an experienced builder delivers in weeks, and the most common ending is a half-finished account that quietly gets abandoned.
+- What is GoHighLevel and do I need it? GoHighLevel is an all-in-one platform combining a CRM (the software that tracks your leads and clients), texting, email, calendars, automation and review management in one place. Whether you need it depends on what you're running now. If you already have a CRM your team actually uses, tools like n8n or Zapier can usually add the automation on top. If your current setup is a spreadsheet and an inbox, GoHighLevel is probably your fastest path. The platform matters far less than what gets built inside it.
+- What is the Website Concierge? It's an AI receptionist for your website. It answers visitors by chat or voice, day or night, captures their details and books the next step on your calendar, so a lead at 8 PM gets an answer at 8 PM. Every plan starts with a free 30-day trial and full setup by our team. There's no setup fee and no contract, and plans start at $397 a month after the trial.
+- Is Aria a real person? No. Aria is our AI guide, and she says so. She answers questions about PrismAgent day or night, and a real person follows up on anything she can't handle.
+- Can our client data stay private? Yes. For firms that can't send client data to the cloud, we build private AI that stays on equipment in your building.
+- Do you work with businesses outside Minnesota? Yes. We work with businesses anywhere in the U.S., remotely. We're based in Lakeville, Minnesota.
+
+## Blog articles by topic
+
+### Industry Insights
+- [AI Automation for Caterers and Event Venues: Keeping the BEO Current](https://www.prismagentsolutions.com/blog/ai-automation-for-caterers-and-event-venues)
+- [AI Automation for Job Shops: Building the Quote From Scattered Data](https://www.prismagentsolutions.com/blog/ai-automation-for-job-shops)
+- [AI Automation for Freight Brokers: Carrier Onboarding Under Pressure](https://www.prismagentsolutions.com/blog/ai-automation-freight-brokers)
+- [The Lien File Nobody Starts on Time: AI for Self Storage](https://www.prismagentsolutions.com/blog/ai-automation-self-storage-operators)
+- [The Care Plan Nobody Can Find: AI for Home Healthcare Agencies](https://www.prismagentsolutions.com/blog/ai-automation-for-home-healthcare-agencies)
+- [Where AI Fits in a Title and Escrow Office, and Where It Doesn't](https://www.prismagentsolutions.com/blog/ai-automation-for-title-and-escrow)
+- [The PO That Nobody Reconciles: AI for Wholesale Distributors](https://www.prismagentsolutions.com/blog/ai-automation-wholesale-distribution)
+- [The Rental Agreement Nobody Tracks After Pickup: AI Automation for Equipment Rental Companies](https://www.prismagentsolutions.com/blog/ai-automation-equipment-rental-companies)
+- [The Fee Proposal That Took Longer Than the Design: AI Automation for Architecture and Engineering Firms](https://www.prismagentsolutions.com/blog/ai-automation-architecture-engineering-firms)
+- [The Chart Nobody Finishes on Time: AI Automation for Veterinary Practices](https://www.prismagentsolutions.com/blog/ai-automation-for-veterinary-practices)
+- [The Inspection Report Nobody Reads: AI Automation for Commercial Cleaning Companies](https://www.prismagentsolutions.com/blog/ai-automation-for-commercial-cleaning)
+- [The Renewal Book Does Not Renew Itself: AI Automation for Insurance Agencies](https://www.prismagentsolutions.com/blog/ai-automation-for-insurance-agencies)
+- [The Owner Statement Is Not the Problem. Everything Behind It Is.](https://www.prismagentsolutions.com/blog/property-management-automation)
+- [AI Automation for Landscaping Companies: From Bid to Renewal](https://www.prismagentsolutions.com/blog/ai-automation-for-landscaping-companies)
+- [AI Automation for Accounting Firms: From Engagement Letter to Monthly Close](https://www.prismagentsolutions.com/blog/ai-automation-for-accounting-firms)
+- [AI Automation for Staffing Firms: Cut the Admin, Not the Judgment](https://www.prismagentsolutions.com/blog/ai-automation-for-staffing-firms)
+- [AI Automation for HVAC Companies: Where It Pays Off](https://www.prismagentsolutions.com/blog/ai-automation-for-hvac-companies)
+- [How Med Spas Use AI to Capture Missed Calls and Fill the Schedule](https://www.prismagentsolutions.com/blog/ai-for-med-spas)
+
+### AI Automation
+- [Accounts Payable Automation: Getting Vendor Bills Paid Right](https://www.prismagentsolutions.com/blog/accounts-payable-automation)
+- [Meeting Follow-Up Automation: Turning Notes Into Next Steps](https://www.prismagentsolutions.com/blog/meeting-follow-up-automation)
+- [Hiring Workflow Automation: Stop Losing Good People](https://www.prismagentsolutions.com/blog/hiring-workflow-automation)
+- [Document Tracking Automation: Stop Losing Files](https://www.prismagentsolutions.com/blog/document-tracking-automation)
+- [Recurring Billing Automation: Stop Chasing the Same Invoice](https://www.prismagentsolutions.com/blog/recurring-billing-automation)
+- [Office Efficiency: Stop Doing the Same Work Twice](https://www.prismagentsolutions.com/blog/office-efficiency-automation)
+- [Business Reporting Automation: Stop Rebuilding the Same Weekly Report](https://www.prismagentsolutions.com/blog/business-reporting-automation)
+- [Email and Text Automation: Getting the Right Message Out Without the Manual Work](https://www.prismagentsolutions.com/blog/email-text-automation-small-business)
+- [Lead Qualification and Routing: Getting the Right Inquiry to the Right Person](https://www.prismagentsolutions.com/blog/lead-qualification-and-routing)
+- [Customer Service Auto-Replies That Actually Help](https://www.prismagentsolutions.com/blog/customer-service-auto-replies)
+- [Invoice Follow-Up Automation: Getting Paid for Finished Work](https://www.prismagentsolutions.com/blog/invoice-follow-up-automation)
+- [Approval Workflow Automation: When Work Waits on One Person](https://www.prismagentsolutions.com/blog/approval-workflow-automation)
+- [Employee Onboarding Automation: What to Hand Off and What to Keep](https://www.prismagentsolutions.com/blog/employee-onboarding-automation)
+- [What Happens After a Customer Says Yes?](https://www.prismagentsolutions.com/blog/client-onboarding-automation)
+- [Appointment Scheduling Automation: Fill the Calendar and Cut No-Shows](https://www.prismagentsolutions.com/blog/appointment-scheduling-automation)
+- [Lead Follow-Up Automation: Stop Losing Business to Slow Replies](https://www.prismagentsolutions.com/blog/lead-follow-up-automation)
+- [How AI Improves Dental Appointment Scheduling](https://www.prismagentsolutions.com/blog/how-ai-improves-dental-appointment-scheduling)
+- [AI Voice Agents for Dental Practices](https://www.prismagentsolutions.com/blog/ai-voice-agents-for-dental-practices)
+- [Legal Intake Automation: How Law Firms Stop Losing $5,000 Cases to a Missed Call](https://www.prismagentsolutions.com/blog/legal-intake-automation-law-firms)
+- [AI for Marketing Agencies: How to Stop Losing $10,000 Projects to Slow Follow-Up](https://www.prismagentsolutions.com/blog/ai-for-marketing-agencies-lead-follow-up)
+- [5 Back Office Workflows Every Service Business Should Automate Before Hiring Anyone New](https://www.prismagentsolutions.com/blog/back-office-workflows-service-business-automate)
+- [How Much Does AI Automation Cost for a Small Law Firm? (2026 Breakdown)](https://www.prismagentsolutions.com/blog/ai-automation-cost-law-firm)
+- [Why Your Missed Calls Are Your Biggest Revenue Leak](https://www.prismagentsolutions.com/blog/missed-calls-revenue-leak)
+- [5 AI Workflows That Save Small Business Owners 10+ Hours Every Week](https://www.prismagentsolutions.com/blog/ai-automation-small-business)
+
+### AI Business Academy
+- [What Is an AI Agent, and Does Your Business Need One?](https://www.prismagentsolutions.com/blog/what-is-an-ai-agent)
+- [Does Your Small Business Need an AI Policy?](https://www.prismagentsolutions.com/blog/ai-policy-for-small-business)
+- [How to Build an AI Implementation Roadmap](https://www.prismagentsolutions.com/blog/ai-implementation-roadmap-small-business)
+- [Is Your Business Data Ready for AI?](https://www.prismagentsolutions.com/blog/data-readiness-for-ai)
+- [Common AI Mistakes That Cost Small Businesses Time and Money](https://www.prismagentsolutions.com/blog/common-ai-mistakes-small-business)
+- [What to Ask Before You Start an AI Project](https://www.prismagentsolutions.com/blog/what-to-ask-before-starting-ai-project)
+- [How to Tell Whether Your AI Investment Is Actually Working](https://www.prismagentsolutions.com/blog/is-my-ai-investment-working)
+- [How to Identify the Right AI Use Case for Your Business](https://www.prismagentsolutions.com/blog/identify-ai-use-case-small-business)
+- [How to Find the Repetitive Work That Is Quietly Costing Your Business](https://www.prismagentsolutions.com/blog/find-repetitive-work-costing-your-business)
+- [How to Build an AI-Powered Knowledge Base for Your Business](https://www.prismagentsolutions.com/blog/knowledge-base-automation-small-business)
+- [How to Choose an AI Consultant (and When You Do Not Need One)](https://www.prismagentsolutions.com/blog/how-to-choose-an-ai-consultant)
+- [Business Software Integration: Why Your Apps Don't Talk to Each Other](https://www.prismagentsolutions.com/blog/business-software-integration-small-business)
+- [How to Prepare Your Team Before You Automate Anything](https://www.prismagentsolutions.com/blog/prepare-your-team-for-ai)
+- [How to Tell If an AI Project Is Worth the Money](https://www.prismagentsolutions.com/blog/is-an-ai-project-worth-it)
+- [How Small Businesses Use AI to Compete With Larger Companies](https://www.prismagentsolutions.com/blog/ai-compete-with-larger-companies)
+- [How AI Helps You Handle More Customers Without Hiring](https://www.prismagentsolutions.com/blog/handle-more-customers-without-hiring)
+- [AI Tools vs AI Consulting: What Small Businesses Actually Need](https://www.prismagentsolutions.com/blog/ai-tools-vs-ai-consulting)
+
+### CRM Setup
+- [Is Your CRM Making Money, or Just Storing Contacts?](https://www.prismagentsolutions.com/blog/crm-automation-small-business)
+- [GoHighLevel vs HubSpot for Small Business: Which CRM Earns Its Keep for an Agency?](https://www.prismagentsolutions.com/blog/gohighlevel-vs-hubspot-for-agencies)
+
+### AI Voice Agents
+- [Why Speed to Lead Matters for HVAC Companies in 2026](https://www.prismagentsolutions.com/blog/hvac-speed-to-lead)
+- [How Missed Calls Are Costing Law Firms Thousands in Lost Cases (And How to Fix It)](https://www.prismagentsolutions.com/blog/missed-calls-law-firms)
+- [Restaurant Missed Calls: How AI Phone Answering Helps](https://www.prismagentsolutions.com/blog/restaurant-missed-calls-how-ai-phone-answering-helps)
+- [How HVAC Companies Are Using AI Voice Agents to Capture More Service Calls](https://www.prismagentsolutions.com/blog/hvac-ai-voice-agents)
+- [AI Receptionist for Electrical Contractors: How to Stop Losing $4,500 Jobs to a Missed Call](https://www.prismagentsolutions.com/blog/ai-receptionist-for-electrical-contractors)
+- [AI Voice Agents for Contractors: What They Actually Cost vs. What They Recover](https://www.prismagentsolutions.com/blog/ai-voice-agent-contractor-cost-recovery)
+
+### AI Consulting for Small Business
+- [What Business Processes Should You Automate First with AI?](https://www.prismagentsolutions.com/blog/business-processes-to-automate-with-ai)
+- [Where Do I Start with AI for My Business?](https://www.prismagentsolutions.com/blog/where-do-i-start-with-ai-for-my-business)
+
+### Lead Generation
+- [How to Automate Lead Follow-Up for Contractors Before the Job Goes to Someone Else](https://www.prismagentsolutions.com/blog/automate-lead-follow-up-for-contractors)

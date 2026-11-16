@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Missed Call Revenue Calculator | Free Tool | PrismAgent Solutions</title>
+<meta name="description" content="Free missed call calculator: enter four numbers from your business and see what unanswered calls cost you per month and per year. No email required, math shown.">
+<link rel="canonical" href="https://www.prismagentsolutions.com/missed-call-calculator">
+<meta name="robots" content="noindex, nofollow"><!-- DEMO-ONLY: remove on the live site -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PrismAgent Solutions">
+<meta property="og:title" content="Missed Call Revenue Calculator | Free Tool | PrismAgent Solutions">
+<meta property="og:description" content="Free missed call calculator: enter four numbers from your business and see what unanswered calls cost you per month and per year. No email required, math shown.">
+<meta property="og:url" content="https://www.prismagentsolutions.com/missed-call-calculator">
+<meta property="og:image" content="https://www.prismagentsolutions.com/home/assets/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PrismAgent Solutions: a city skyline at night with lit office windows">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Missed Call Revenue Calculator | Free Tool | PrismAgent Solutions">
+<meta name="twitter:description" content="Free missed call calculator: enter four numbers from your business and see what unanswered calls cost you per month and per year. No email required, math shown.">
+<meta name="twitter:image" content="https://www.prismagentsolutions.com/home/assets/og-image.jpg">
+<meta name="theme-color" content="#0A1628">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230A1628'/><path d='M16 6 26 25H6Z' fill='none' stroke='%2300D4EB' stroke-width='2.4' stroke-linejoin='round'/></svg>">
+<link rel="alternate" type="application/rss+xml" title="PrismAgent Solutions blog" href="https://www.prismagentsolutions.com/rss.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scrollcraft.css">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.remove("no-js")</script>
+<noscript><style>[data-sc-in],[data-sc-stagger]>*,[data-sc-cue]{opacity:1!important;transform:none!important}</style></noscript>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Organization","ProfessionalService"],"@id":"https://www.prismagentsolutions.com/#org","name":"PrismAgent Solutions","legalName":"PrismAgent Solutions LLC","url":"https://www.prismagentsolutions.com/","logo":"https://www.prismagentsolutions.com/home/assets/logo-dark.webp","image":"https://www.prismagentsolutions.com/home/assets/og-image.jpg","description":"PrismAgent Solutions builds custom AI systems for small and mid-size businesses across the United States: reports that publish themselves, proposals and work orders that build themselves, numbers pulled out of old software into dashboards owners actually read, and calls and leads answered day or night. Built inside the tools you already use, checked by your people, measured in dollars.","telephone":"+1-612-405-9802","email":"Chad@PrismAgentSolutions.com","address":{"@type":"PostalAddress","addressLocality":"Lakeville","addressRegion":"MN","addressCountry":"US"},"areaServed":{"@type":"Country","name":"United States"},"founder":{"@id":"https://www.prismagentsolutions.com/#chad"},"knowsAbout":["AI automation for small business","AI voice agents","AI receptionist","document automation","proposal automation","business reporting automation","private AI","GoHighLevel CRM","n8n workflow automation"]},{"@type":"WebSite","@id":"https://www.prismagentsolutions.com/#website","url":"https://www.prismagentsolutions.com/","name":"PrismAgent Solutions","publisher":{"@id":"https://www.prismagentsolutions.com/#org"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://www.prismagentsolutions.com/#chad","name":"Chad Krueger","jobTitle":"Founder","worksFor":{"@id":"https://www.prismagentsolutions.com/#org"},"url":"https://www.prismagentsolutions.com/#about"},{"@type":"WebApplication","@id":"https://www.prismagentsolutions.com/missed-call-calculator#tool","name":"Missed Call Revenue Calculator","url":"https://www.prismagentsolutions.com/missed-call-calculator","applicationCategory":"BusinessApplication","operatingSystem":"Any (runs in the browser)","description":"Free calculator that estimates the monthly and yearly revenue a business loses to unanswered phone calls, from four numbers: calls per week, percent missed, percent of callers who become customers, and average customer value.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@id":"https://www.prismagentsolutions.com/#org"},"isAccessibleForFree":true},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.prismagentsolutions.com/"},{"@type":"ListItem","position":2,"name":"Free Tools","item":"https://www.prismagentsolutions.com/missed-call-calculator"}]}]}</script>
+<style>
+.calc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
+.inputs { display: grid; gap: 26px; }
+.field label { display: flex; justify-content: space-between; gap: 12px; font: 600 var(--sc-t-sm) var(--sc-font-text); margin-bottom: 10px; }
+.field label output { font: 700 var(--sc-t-base) var(--sc-font-display); color: var(--sc-ink); font-variant-numeric: tabular-nums; }
+.field .hint { display: block; margin-top: 8px; font-size: var(--sc-t-xs); color: var(--sc-ink-soft); line-height: 1.5; }
+.field .row { display: grid; grid-template-columns: minmax(0, 1fr) 7.5rem; gap: 14px; align-items: center; }
+.field input[type=number] { width: 100%; min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid var(--sc-hairline-strong); background: rgba(255,255,255,.04); color: var(--sc-ink); font: 600 var(--sc-t-base) var(--sc-font-text); font-variant-numeric: tabular-nums; }
+.field input[type=number]:focus { outline: 2px solid var(--sc-accent); outline-offset: 1px; }
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 28px; background: transparent; cursor: pointer; }
+input[type=range]::-webkit-slider-runnable-track { height: 6px; border-radius: 99px; background: linear-gradient(90deg, var(--sc-accent) var(--fill, 50%), rgba(255,255,255,.12) var(--fill, 50%)); }
+input[type=range]::-moz-range-track { height: 6px; border-radius: 99px; background: rgba(255,255,255,.12); }
+input[type=range]::-moz-range-progress { height: 6px; border-radius: 99px; background: var(--sc-accent); }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; margin-top: -8px; border-radius: 50%; background: #fff; border: 4px solid var(--sc-accent); box-shadow: 0 2px 8px rgba(0,0,0,.4); }
+input[type=range]::-moz-range-thumb { width: 16px; height: 16px; border-radius: 50%; background: #fff; border: 4px solid var(--sc-accent); }
+.result { position: sticky; top: calc(var(--bar-h) + 20px); padding: clamp(22px, 3vw, 36px); border-radius: 24px;
+  background: radial-gradient(90% 80% at 100% 0%, rgba(242,182,90,.14), transparent 60%), var(--sc-surface); border: 1px solid var(--sc-hairline-strong); box-shadow: var(--sc-e3); }
+.result .k { font: 600 var(--sc-t-xs) var(--sc-font-text); letter-spacing: var(--sc-track-wide); text-transform: uppercase; color: var(--amber); margin: 0 0 10px; }
+.result .big { font: 800 clamp(3rem, 2rem + 4.5vw, 5.4rem)/0.95 var(--sc-font-display); letter-spacing: -0.045em; margin: 0; font-variant-numeric: tabular-nums; }
+.result .per { margin: 8px 0 22px; color: var(--sc-ink-soft); }
+.result .per b { color: var(--sc-ink); font-variant-numeric: tabular-nums; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0 0 22px; padding: 0; list-style: none; }
+.stats li { padding: 12px; border-radius: 12px; background: rgba(255,255,255,.04); }
+.stats b { display: block; font: 700 var(--sc-t-lg) var(--sc-font-display); font-variant-numeric: tabular-nums; }
+.stats span { font-size: var(--sc-t-xs); color: var(--sc-ink-soft); line-height: 1.35; display: block; margin-top: 4px; }
+.split { margin: 0 0 8px; height: 12px; border-radius: 99px; background: var(--sc-accent); overflow: hidden; display: flex; justify-content: flex-end; }
+.split i { display: block; height: 100%; background: var(--amber); transition: width .3s ease; }
+.split-key { display: flex; justify-content: space-between; font-size: var(--sc-t-xs); color: var(--sc-ink-soft); margin: 0 0 22px; }
+.split-key b { color: var(--sc-ink); font-weight: 600; }
+.math { margin: 0 0 22px; padding: 14px 16px; border-radius: 12px; border: 1px dashed var(--sc-hairline-strong); font-size: var(--sc-t-xs); line-height: 1.6; color: var(--sc-ink-soft); font-variant-numeric: tabular-nums; }
+.math b { color: var(--sc-ink); }
+.result .acts { display: flex; gap: 10px; flex-wrap: wrap; }
+.result .acts .btn { flex: 1 1 auto; }
+.result .fine { margin: 14px 0 0; font-size: var(--sc-t-xs); color: var(--sc-ink-soft); line-height: 1.5; }
+.assess { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.assess ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; counter-reset: s; }
+.assess li { counter-increment: s; display: grid; grid-template-columns: 2.2rem 1fr; gap: 12px; align-items: start; line-height: 1.55; color: var(--sc-ink-soft); }
+.assess li::before { content: counter(s); width: 2.2rem; height: 2.2rem; border-radius: 50%; display: grid; place-items: center; background: rgba(0,212,235,.12); color: var(--sc-accent); font: 700 var(--sc-t-sm) var(--sc-font-display); }
+.assess li b { color: var(--sc-ink); display: block; }
+.assess .panel { padding: clamp(22px, 3vw, 34px); border-radius: 24px; background: var(--sc-surface); border: 1px solid color-mix(in oklab, var(--sc-accent) 45%, transparent); }
+.assess .panel h3 { margin: 0 0 8px; font: 700 var(--sc-t-xl)/1.1 var(--sc-font-display); letter-spacing: var(--sc-track-snug); }
+.assess .panel p { color: var(--sc-ink-soft); margin: 0 0 18px; line-height: 1.6; }
+.assess .panel .btn { width: 100%; margin-bottom: 10px; }
+.why { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.reads { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.reads a { display: block; text-decoration: none; padding: 18px; border-radius: 16px; border: 1px solid var(--sc-hairline); background: rgba(255,255,255,.025); transition: border-color .15s ease, transform .15s ease; }
+.reads a:hover { border-color: color-mix(in oklab, var(--sc-accent) 55%, transparent); transform: translateY(-2px); }
+.reads .cat { font-size: var(--sc-t-xs); color: var(--sc-accent); font-weight: 600; }
+.reads b { display: block; margin-top: 8px; font: 600 var(--sc-t-base)/1.3 var(--sc-font-display); }
+@media (max-width: 960px) { .calc, .assess { grid-template-columns: 1fr; } .result { position: static; } .why { grid-template-columns: 1fr; } .reads { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .reads { grid-template-columns: 1fr; } .stats { grid-template-columns: 1fr 1fr 1fr; } .field .row { grid-template-columns: minmax(0, 1fr) 6.2rem; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-bar is-page" id="bar">
+  <a class="mark" href="index.html" aria-label="PrismAgent Solutions, home"><img src="assets/logo-white.webp" width="379" height="96" alt="PrismAgent Solutions"></a>
+  <nav aria-label="Main">
+    <a class="nav-link" href="#build">What we build</a>
+    <a class="nav-link" href="#start">Pricing</a>
+    <a class="nav-link" href="ai-receptionist.html">AI Receptionist</a>
+    <a class="nav-link" href="missed-call-calculator.html" aria-current="page">Free Tools</a>
+    <a class="nav-link" href="blog/index.html">Blog</a>
+    <a class="nav-link" href="faq.html">FAQ</a>
+    <a class="btn btn--accent" href="#assessment" data-assess><span class="long">Get your free AI assessment</span><span class="short">Free assessment</span></a>
+  </nav>
+  <button class="menu-btn" id="menuOpen" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</header>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="sheet__top"><img src="assets/logo-white.webp" width="379" height="96" alt="PrismAgent Solutions"><button class="menu-btn" id="menuClose" type="button" aria-label="Close menu" style="display:inline-grid;place-items:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <ul>
+      <li><a href="#build">What we build</a></li>
+      <li><a href="#start">Pricing</a></li>
+      <li><a href="#about">About Chad</a></li>
+      <li><a href="ai-receptionist.html">AI Receptionist</a></li>
+      <li><a href="missed-call-calculator.html">Free Tools</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="btn btn--accent" href="#assessment" data-assess>Get your free AI assessment</a>
+  <p class="call">Or call <a href="tel:+16124059802">(612) 405-9802</a></p>
+</div>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="page-hero__sky" aria-hidden="true">
+      <picture><source media="(max-width: 700px)" srcset="assets/hero-plate-m.webp"><img src="assets/hero-plate.webp" alt="" fetchpriority="high"></picture>
+      <picture><source media="(max-width: 700px)" srcset="assets/hero-lights-m.webp"><img class="lights" src="assets/hero-lights.webp" alt=""></picture>
+    </div>
+    <div class="sc-wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Free Tools</span></nav>
+      <span class="eyebrow">Free tool &middot; No email required</span>
+      <h1 class="sc-display sc-display--lg">How much revenue is your phone letting slip away?</h1>
+      <p class="sc-body">Four numbers from your own business. The math is shown, nothing you type is stored, and you don't have to give us an email to see the answer.</p>
+    </div>
+  </section>
+
+  <section class="section--tight" aria-labelledby="calc-h">
+    <div class="sc-wrap">
+      <h2 id="calc-h" class="vh">Missed call revenue calculator</h2>
+      <div class="calc">
+        <form class="inputs" id="calcForm" onsubmit="return false">
+          <div class="field">
+          <label for="calls">Calls you get per week<output id="calls-out" for="calls"></output></label>
+          <div class="row"><input type="range" id="calls-r" min="1" max="400" step="1" value="40" aria-label="Calls you get per week"><input type="number" id="calls" inputmode="decimal" min="1" step="1" value="40"></div>
+          <span class="hint">Every inbound call: new customers, existing customers, quotes and questions.</span>
+        </div>
+          <div class="field">
+          <label for="miss">Percent of calls you miss<output id="miss-out" for="miss"></output></label>
+          <div class="row"><input type="range" id="miss-r" min="0" max="100" step="1" value="25" aria-label="Percent of calls you miss"><input type="number" id="miss" inputmode="decimal" min="0" step="1" value="25"></div>
+          <span class="hint">Calls that ring out or hit voicemail. If you've never checked, your phone carrier's call log will tell you.</span>
+        </div>
+          <div class="field">
+          <label for="close">Percent of callers who become customers<output id="close-out" for="close"></output></label>
+          <div class="row"><input type="range" id="close-r" min="0" max="100" step="1" value="30" aria-label="Percent of callers who become customers"><input type="number" id="close" inputmode="decimal" min="0" step="1" value="30"></div>
+          <span class="hint">Out of the people who reach you, how many end up buying. We apply the same rate to the calls you missed.</span>
+        </div>
+          <div class="field">
+          <label for="value">Average value of a customer ($)<output id="value-out" for="value"></output></label>
+          <div class="row"><input type="range" id="value-r" min="50" max="20000" step="50" value="500" aria-label="Average value of a customer ($)"><input type="number" id="value" inputmode="decimal" min="50" step="50" value="500"></div>
+          <span class="hint">What a typical customer spends with you. Use the first job if you're not sure about lifetime value.</span>
+        </div>
+        </form>
+        <aside class="result" aria-live="polite" aria-labelledby="res-k">
+          <p class="k" id="res-k">Estimated revenue lost per year</p>
+          <p class="big" id="yr">$0</p>
+          <p class="per">That's about <b id="mo">$0</b> a month.</p>
+          <ul class="stats">
+            <li><b id="mcalls">0</b><span>missed calls a month</span></li>
+            <li><b id="lost">0</b><span>customers lost a month</span></li>
+            <li><b id="calls-mo">0</b><span>calls a month in total</span></li>
+          </ul>
+          <div class="split" role="img" id="splitbar" aria-label="Share of calls answered and missed"><i id="splitm"></i></div>
+          <p class="split-key"><span><b id="ansPct">75%</b> answered</span><span><b id="missPct">25%</b> missed</span></p>
+          <p class="math" id="math"></p>
+          <div class="acts">
+            <a class="btn btn--accent" href="#assessment">Find out where those calls go</a>
+            <button class="btn btn--ghost" type="button" id="share">Copy a link to these numbers</button>
+          </div>
+          <p class="fine">An estimate, not a promise. Your real number depends on who's calling and why. 4.33 is the average number of weeks in a month (52 weeks divided by 12).</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="assessment" aria-labelledby="as-h">
+    <div class="sc-wrap assess">
+      <div data-sc-in>
+        <span class="eyebrow">Free AI assessment</span>
+        <h2 id="as-h" class="sc-display sc-display--md">Want to hear exactly where those calls go?</h2>
+        <p class="lede" style="margin-bottom:28px">Have a short conversation with Aria, our AI voice agent, about how your business runs. Then we tell you, in dollars, what your missed calls and slow follow-up are costing and what fixing them would be worth.</p>
+        <ol>
+          <li><span><b>Have a short conversation with Aria</b>Whenever it suits you, day or night. She asks about your business, your calls and where leads get stuck.</span></li>
+          <li><span><b>We build your report</b>Within 2 business days you get a written report with a dollar figure on each leak she found.</span></li>
+          <li><span><b>You decide what's next</b>No pitch. If something's worth building, the report says so and shows the math.</span></li>
+        </ol>
+      </div>
+      <div class="panel" data-sc-in>
+        <h3>Start your free assessment</h3>
+        <p>It takes about ten minutes and costs nothing. A real person reads every report before it goes out.</p>
+        <!-- REPLIT: keep the existing AI Voice Assessment form or embed here, inside this panel, with these buttons below it. -->
+        <div id="assessment-form"></div>
+        <button class="btn btn--accent" type="button" data-aria>Talk to Aria now</button>
+        <a class="btn btn--ghost" data-book href="#">Or book a call with Chad</a>
+        <p style="margin:6px 0 0;font-size:var(--sc-t-xs);text-align:center">Prefer the phone? <a class="link" href="tel:+16124059802">(612) 405-9802</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="why-h" style="padding-top:0">
+    <div class="sc-wrap">
+      <h2 id="why-h" class="sc-display sc-display--md" style="max-width:20ch">Why the number is bigger than it looks</h2>
+      <div class="why" data-sc-in data-sc-stagger="70">
+        <article class="card"><h3>A missed call is more than one job</h3><p>It's that customer's next job too, the referral they would have sent your way, and the review they'll now write about somebody else. The calculator only counts the first sale.</p></article>
+        <article class="card"><h3>Where the calls actually go</h3><p>Plenty of people who reach voicemail never leave a message. They call the next name on the list, and whoever picks up first usually gets the work.</p></article>
+        <article class="card"><h3>What a voice agent does, and doesn't</h3><p>It answers every call, books the next step on your calendar and sends you the details. It doesn't haggle on price or promise what your team wouldn't, and anything it can't handle goes to a person.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight" aria-labelledby="rr-h">
+    <div class="sc-wrap">
+      <h2 id="rr-h" class="sc-display" style="font-size:var(--sc-t-xl);margin:0 0 20px">Related reading</h2>
+      <div class="reads">
+        <a href="https://www.prismagentsolutions.com/blog/missed-calls-revenue-leak"><span class="cat">AI Automation</span><b>Why Your Missed Calls Are Your Biggest Revenue Leak</b></a>
+        <a href="https://www.prismagentsolutions.com/blog/hvac-speed-to-lead"><span class="cat">AI Voice Agents</span><b>Why Speed to Lead Matters for HVAC Companies</b></a>
+        <a href="https://www.prismagentsolutions.com/blog/legal-intake-automation-law-firms"><span class="cat">AI Automation</span><b>How Law Firms Stop Losing $5,000 Cases to a Missed Call</b></a>
+        <a href="https://www.prismagentsolutions.com/blog/ai-voice-agent-contractor-cost-recovery"><span class="cat">AI Voice Agents</span><b>AI Voice Agents for Contractors: What They Cost vs. What They Recover</b></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sc-wrap">
+      <div class="cta-band">
+        <div><h2>Never miss the call in the first place.</h2><p>Our AI receptionist answers your website visitors by chat or voice, day or night, and books the next step. Free for 30 days, full setup included.</p></div>
+        <div class="acts"><a class="btn btn--accent" href="ai-receptionist.html">See the AI receptionist</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-foot">
+  <div class="cols">
+    <div class="brand">
+      <img src="assets/logo-white.webp" width="379" height="96" alt="PrismAgent Solutions" loading="lazy">
+      <p>Custom AI systems that take the hand-typed work out of the jobs that make you money. Serving businesses across the United States from Lakeville, Minnesota.</p>
+      <p class="contact"><a href="tel:+16124059802">(612) 405-9802</a><br><a href="mailto:Chad@PrismAgentSolutions.com">Chad@PrismAgentSolutions.com</a></p>
+    </div>
+    <div>
+      <h2>What we do</h2>
+      <ul>
+        <li><a href="#build">What we build</a></li>
+        <li><a href="#start">Pricing</a></li>
+        <li><a href="ai-receptionist.html">AI Receptionist</a></li>
+        <li><a href="#about">About Chad</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Free resources</h2>
+      <ul>
+        <li><a href="missed-call-calculator.html">Missed-call calculator</a></li>
+        <li><a href="missed-call-calculator.html#assessment">Free AI assessment</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Company</h2>
+      <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a data-book href="#">Book a call</a></li>
+        <li><a href="https://www.prismagentsolutions.com/privacy">Privacy Policy</a></li>
+        <li><a href="https://www.prismagentsolutions.com/terms">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="base"><span>&copy; 2026 PrismAgent Solutions LLC. All rights reserved.</span><span>Lakeville, Minnesota &middot; Serving businesses nationwide</span></div>
+</footer>
+
+<script src="scrollcraft.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
+<script src="assets/site.js"></script>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6af0aae3e90adeca202ad9c0"></script>
+<script>
+(function () {
+  var ids = ["calls", "miss", "close", "value"];
+  var money = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+  var num = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
+  var q = new URLSearchParams(location.search);
+  ids.forEach(function (id) { if (q.has(id) && !isNaN(+q.get(id))) document.getElementById(id).value = q.get(id); });
+  function val(id) { var v = parseFloat(document.getElementById(id).value); return isNaN(v) ? 0 : Math.max(0, v); }
+  function sync(id, from) {
+    var n = document.getElementById(id), r = document.getElementById(id + "-r");
+    if (from === "r") n.value = r.value; else r.value = Math.min(+r.max, val(id));
+    r.style.setProperty("--fill", ((+r.value - +r.min) / (+r.max - +r.min) * 100) + "%");
+  }
+  function calc() {
+    var calls = val("calls"), miss = Math.min(100, val("miss")) / 100, close = Math.min(100, val("close")) / 100, value = val("value");
+    var wk = 52 / 12, missedMo = calls * miss * wk, lostMo = missedMo * close, revMo = lostMo * value, revYr = revMo * 12;
+    document.getElementById("yr").textContent = money.format(revYr);
+    document.getElementById("mo").textContent = money.format(revMo);
+    document.getElementById("mcalls").textContent = num.format(missedMo);
+    document.getElementById("lost").textContent = lostMo < 10 ? lostMo.toFixed(1) : num.format(lostMo);
+    document.getElementById("calls-mo").textContent = num.format(calls * wk);
+    document.getElementById("splitm").style.width = (miss * 100) + "%";
+    document.getElementById("missPct").textContent = Math.round(miss * 100) + "%";
+    document.getElementById("ansPct").textContent = Math.round(100 - miss * 100) + "%";
+    document.getElementById("calls-out").textContent = num.format(calls);
+    document.getElementById("miss-out").textContent = Math.round(miss * 100) + "%";
+    document.getElementById("close-out").textContent = Math.round(close * 100) + "%";
+    document.getElementById("value-out").textContent = money.format(value);
+    document.getElementById("math").innerHTML = "<b>How we got this:</b> " + num.format(calls) + " calls a week &times; " + Math.round(miss * 100) +
+      "% missed &times; 4.33 weeks = <b>" + num.format(missedMo) + " missed calls a month</b>. &times; " + Math.round(close * 100) +
+      "% who'd become customers = <b>" + (lostMo < 10 ? lostMo.toFixed(1) : num.format(lostMo)) + " customers</b>. &times; " + money.format(value) +
+      " = <b>" + money.format(revMo) + " a month</b>, or " + money.format(revYr) + " a year.";
+  }
+  ids.forEach(function (id) {
+    document.getElementById(id).addEventListener("input", function () { sync(id, "n"); calc(); });
+    document.getElementById(id + "-r").addEventListener("input", function () { sync(id, "r"); calc(); });
+    sync(id, "n");
+  });
+  calc();
+  document.getElementById("share").addEventListener("click", function () {
+    var p = new URLSearchParams(); ids.forEach(function (id) { p.set(id, val(id)); });
+    var url = location.origin + location.pathname + "?" + p.toString(), b = this;
+    (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { b.textContent = "Link copied"; }, function () { prompt("Copy this link:", url); });
+    setTimeout(function () { b.textContent = "Copy a link to these numbers"; }, 2400);
+  });
+})();
+</script>
+</body>
+</html>
