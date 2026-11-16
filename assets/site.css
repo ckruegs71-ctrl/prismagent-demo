@@ -69,7 +69,7 @@ a { color: inherit; }
 .site-foot .cols { max-width: var(--sc-maxw); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr)); gap: clamp(2rem, 5vw, 4rem); }
 .site-foot img { height: 36px; width: auto; display: block; margin-bottom: 16px; }
 .site-foot p { margin: 0 0 12px; max-width: 40ch; line-height: 1.6; }
-.site-foot h2 { font: 600 var(--sc-t-xs) var(--sc-font-text); letter-spacing: var(--sc-track-wide); text-transform: uppercase; color: var(--sc-ink); margin: 6px 0 14px; }
+.site-foot h2 { font: 700 var(--sc-t-base) var(--sc-font-display); color: var(--sc-ink); margin: 4px 0 14px; }
 .site-foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .site-foot a { text-decoration: none; }
 .site-foot a:hover { color: var(--sc-ink); }
@@ -91,7 +91,7 @@ a { color: inherit; }
 .crumbs a { text-decoration: none; color: var(--sc-ink-soft); }
 .crumbs a:hover { color: var(--sc-ink); }
 .crumbs span[aria-hidden] { opacity: .5; }
-.eyebrow { display: inline-block; font: 600 var(--sc-t-xs) var(--sc-font-text); letter-spacing: var(--sc-track-wide); text-transform: uppercase; color: var(--sc-accent); margin-bottom: var(--sc-4); }
+/* No eyebrows: never put a small label above a heading (Chad's rule, Nov 15, 2026). */
 
 /* ------------------------------------------------------------- shared ---- */
 .section { padding-block: clamp(3.5rem, 8vw, 7rem); }

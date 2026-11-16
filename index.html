@@ -181,7 +181,7 @@
   border: 1px solid var(--sc-hairline); box-shadow: var(--sc-e3); font-family: var(--sc-font-text); transition: opacity .3s ease, transform .3s ease; }
 .night__top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
 .night__clock { font: 700 1.35rem/1 var(--sc-font-display); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
-.night__label { font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--sc-ink-soft); }
+.night__label { font-size: .78rem; color: var(--sc-ink-soft); }
 .night__state { margin: 6px 0 8px; font-size: .78rem; color: var(--amber); font-weight: 600; transition: color .3s ease; }
 .night.is-handled .night__state { color: var(--sc-accent); }
 .night__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
@@ -259,10 +259,12 @@
 .latest a:hover { border-color: color-mix(in oklab, var(--sc-accent) 50%, transparent); transform: translateY(-2px); }
 .latest .m { font: 600 var(--sc-t-xs) var(--sc-font-text); color: var(--sc-ink-soft); }
 .latest .m b { color: var(--sc-accent); font-weight: 600; margin-right: 8px; }
-.latest h3 { margin: 12px 0 10px; font: 700 var(--sc-t-base)/1.3 var(--sc-font-display); }
+.latest h3 { margin: 0 0 10px; font: 700 var(--sc-t-base)/1.3 var(--sc-font-display); }
+.latest .m { margin-top: auto; padding-top: 14px; }
 .latest p { margin: 0; color: var(--sc-ink-soft); font-size: var(--sc-t-sm); line-height: 1.55; }
 @media (max-width: 900px) { .latest { grid-template-columns: 1fr; } }
 .faq .all { margin-top: 18px; display: inline-block; }
+.leak p strong.when { color: var(--amber); font-weight: 600; }
 .close .mail { margin-top: 6px; }
 </style>
 </head>
@@ -341,16 +343,16 @@
       <h2 class="sc-display sc-display--lg" data-sc-in data-sc-kinetic="lines">Sound familiar?</h2>
 
       <article class="leak" data-sc-in data-sc-stagger="90" data-night="1">
-        <div><span class="time">Every Thursday</span><h3>The report you rebuild every week.</h3></div>
-        <p>Same numbers, same template, typed by hand against a deadline. It goes out under your name, typos and all.</p>
+        <div><h3>The report you rebuild every week.</h3></div>
+        <p><strong class="when">Every Thursday.</strong> Same numbers, same template, typed by hand against a deadline. It goes out under your name, typos and all.</p>
       </article>
       <article class="leak" data-sc-in data-sc-stagger="90" data-night="2">
-        <div><span class="time">Tuesday to Friday</span><h3>The proposal that waits for you.</h3></div>
-        <p>The customer is ready on Tuesday. The proposal goes out Friday, when you finally get back to your desk. Some customers won't wait that long.</p>
+        <div><h3>The proposal that waits for you.</h3></div>
+        <p><strong class="when">Tuesday to Friday.</strong> The customer is ready on Tuesday. The proposal goes out Friday, when you finally get back to your desk. Some customers won't wait that long.</p>
       </article>
       <article class="leak" data-sc-in data-sc-stagger="90" data-night="3">
-        <div><span class="time">8:12 PM</span><h3>The lead that calls after you've gone home.</h3></div>
-        <p>They found you, they called, they got voicemail. By morning they've booked whoever picked up.</p>
+        <div><h3>The lead that calls after you've gone home.</h3></div>
+        <p><strong class="when">8:12 PM.</strong> They found you, they called, they got voicemail. By morning they've booked whoever picked up.</p>
       </article>
 
       <p class="turnline" data-sc-in data-night="4">Every one of these has a dollar number on it. <em>We find it first.</em></p>
@@ -407,7 +409,7 @@
       <h2 class="sc-display sc-display--lg" data-sc-in data-sc-kinetic="lines">Real numbers from real builds.</h2>
       <div class="grid">
         <div class="story" data-sc-in data-sc-stagger="80">
-          <span class="tag">Results story, live and measured</span>
+          
           <p class="figure"><span class="from">Weekly report, from about 90 minutes</span>~<span data-sc-count="90 2" data-sc-count-ms="1600">2</span> <small>minutes</small></p>
           <p>A one-person commodity advisory firm sent its weekly market report about 90 minutes after the government data came out, typed by hand. Now the numbers, charts and client dashboard are ready about 2 minutes after release, and every figure matched the published tables on the first live release day. His commentary is still his.</p>
           <p class="quote">"This is sick." "That is insane." "Elite."</p>
@@ -473,7 +475,7 @@
       </div>
         <article class="offer offer--wide" data-sc-in>
           <div class="ow__head">
-            <p class="kicker">AI receptionist</p>
+            
             <h3 class="name">Website Concierge</h3>
             <p class="amt">Free 30 days<small>then from $397 a month</small></p>
           </div>
@@ -559,9 +561,9 @@
         <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn--ghost" href="blog/small-business-owners-guide-to-ai.html">Read the free guide</a><a class="btn btn--ghost" href="blog/index.html">All 70 articles</a></div>
       </div>
       <div class="latest" data-sc-in data-sc-stagger="70">
-        <a href="https://www.prismagentsolutions.com/blog/ai-automation-for-caterers-and-event-venues"><span class="m"><b>Industry Insights</b><time datetime="2026-11-13">Nov 13, 2026</time></span><h3>AI Automation for Caterers and Event Venues: Keeping the BEO Current</h3><p>A signed banquet event order still changes.</p></a>
-        <a href="https://www.prismagentsolutions.com/blog/accounts-payable-automation"><span class="m"><b>AI Automation</b><time datetime="2026-11-11">Nov 11, 2026</time></span><h3>Accounts Payable Automation: Getting Vendor Bills Paid Right</h3><p>Accounts payable automation can capture, check, route, and schedule vendor bills.</p></a>
-        <a href="https://www.prismagentsolutions.com/blog/what-is-an-ai-agent"><span class="m"><b>AI Business Academy</b><time datetime="2026-11-09">Nov 9, 2026</time></span><h3>What Is an AI Agent, and Does Your Business Need One?</h3><p>An AI agent directs its own steps.</p></a>
+        <a href="https://www.prismagentsolutions.com/blog/ai-automation-for-caterers-and-event-venues"><h3>AI Automation for Caterers and Event Venues: Keeping the BEO Current</h3><p>A signed banquet event order still changes.</p><span class="m"><b>Industry Insights</b><time datetime="2026-11-13">Nov 13, 2026</time></span></a>
+        <a href="https://www.prismagentsolutions.com/blog/accounts-payable-automation"><h3>Accounts Payable Automation: Getting Vendor Bills Paid Right</h3><p>Accounts payable automation can capture, check, route, and schedule vendor bills.</p><span class="m"><b>AI Automation</b><time datetime="2026-11-11">Nov 11, 2026</time></span></a>
+        <a href="https://www.prismagentsolutions.com/blog/what-is-an-ai-agent"><h3>What Is an AI Agent, and Does Your Business Need One?</h3><p>An AI agent directs its own steps.</p><span class="m"><b>AI Business Academy</b><time datetime="2026-11-09">Nov 9, 2026</time></span></a>
       </div>
     </div>
   </section>

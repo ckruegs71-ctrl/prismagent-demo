@@ -33,14 +33,14 @@
 <style>
 .progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--sc-accent); z-index: 45; }
 .post-hero { padding: calc(var(--bar-h) + clamp(2.5rem, 7vh, 4.5rem)) 0 clamp(2rem, 5vh, 3rem); }
-.post-hero h1 { margin: 14px 0 18px; font: 800 clamp(2.1rem, 1.4rem + 2.8vw, 3.6rem)/1.04 var(--sc-font-display); letter-spacing: var(--sc-track-tight); max-width: 24ch; text-wrap: balance; }
+.post-hero h1 { margin: 0 0 18px; font: 800 clamp(2.1rem, 1.4rem + 2.8vw, 3.6rem)/1.04 var(--sc-font-display); letter-spacing: var(--sc-track-tight); max-width: 24ch; text-wrap: balance; }
 .post-hero .dek { color: #D2DFEA; font-size: var(--sc-t-lg); line-height: 1.5; max-width: 60ch; margin: 0 0 22px; }
 .byline { display: flex; align-items: center; gap: 12px; color: var(--sc-ink-soft); font-size: var(--sc-t-sm); }
 .byline .av { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: rgba(0,212,235,.15); color: var(--sc-accent); font: 700 .9rem var(--sc-font-display); }
 .byline b { color: var(--sc-ink); }
 .layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 16rem); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
 .toc { position: sticky; top: calc(var(--bar-h) + 24px); font-size: var(--sc-t-sm); }
-.toc h2 { font: 600 var(--sc-t-xs) var(--sc-font-text); letter-spacing: var(--sc-track-wide); text-transform: uppercase; color: var(--sc-ink-soft); margin: 0 0 12px; }
+.toc h2 { font: 700 var(--sc-t-base) var(--sc-font-display); color: var(--sc-ink); margin: 0 0 12px; }
 .toc ol { list-style: none; margin: 0 0 24px; padding: 0; display: grid; gap: 2px; border-left: 1px solid var(--sc-hairline); }
 .toc a { display: block; padding: 6px 0 6px 14px; margin-left: -1px; border-left: 2px solid transparent; text-decoration: none; color: var(--sc-ink-soft); line-height: 1.35; }
 .toc a:hover { color: var(--sc-ink); }
@@ -55,7 +55,7 @@
 .related { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 .related a { display: block; padding: 20px; border-radius: 16px; border: 1px solid var(--sc-hairline); text-decoration: none; background: rgba(255,255,255,.025); }
 .related a:hover { border-color: color-mix(in oklab, var(--sc-accent) 50%, transparent); }
-.related b { display: block; margin-top: 8px; font: 600 var(--sc-t-base)/1.3 var(--sc-font-display); }
+.related b { display: block; font: 600 var(--sc-t-base)/1.3 var(--sc-font-display); }
 @media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } .toc { display: none; } .related { grid-template-columns: 1fr; } }
 </style>
 <style>.meta{font:600 var(--sc-t-xs) var(--sc-font-text);color:var(--sc-ink-soft);display:flex;gap:10px;flex-wrap:wrap}.meta .cat{color:var(--sc-accent)}</style>
@@ -97,10 +97,9 @@
     <header class="post-hero">
       <div class="sc-wrap">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="../blog/index.html">Blog</a><span aria-hidden="true">/</span><span>Guide</span></nav>
-        <span class="meta"><span class="cat">AI Automation</span><span>Cornerstone guide</span></span>
         <h1>The Small Business Owner&#x27;s Guide to AI: How to Build a More Profitable Business</h1>
         <p class="dek">The small business owner&#x27;s guide to AI: find where your service business is losing revenue and build the systems that recover it, step by step.</p>
-        <div class="byline"><span class="av" aria-hidden="true">CK</span><span>By <b>Chad Krueger</b>, founder of PrismAgent Solutions &middot; <time datetime="2026-11-15">Nov 15, 2026</time> &middot; 25 min read</span></div>
+        <div class="byline"><span class="av" aria-hidden="true">CK</span><span>By <b>Chad Krueger</b>, founder of PrismAgent Solutions &middot; <time datetime="2026-11-15">Nov 15, 2026</time> &middot; 25 min read &middot; AI Automation</span></div>
       </div>
     </header>
     <div class="sc-wrap layout">
@@ -704,9 +703,9 @@ Three Mistakes Service Business Owners Make with AI</a></li>
     <div class="sc-wrap">
       <h2 id="rel-h" class="sc-display" style="font-size:var(--sc-t-xl);margin:0 0 18px">Keep reading</h2>
       <div class="related">
-        <a href="https://www.prismagentsolutions.com/blog/missed-calls-revenue-leak"><span class="meta"><span class="cat">AI Automation</span></span><b>Why Your Missed Calls Are Your Biggest Revenue Leak</b></a>
-        <a href="https://www.prismagentsolutions.com/blog/where-do-i-start-with-ai-for-my-business"><span class="meta"><span class="cat">AI Consulting for Small Business</span></span><b>Where Do I Start with AI for My Business?</b></a>
-        <a href="https://www.prismagentsolutions.com/blog/lead-follow-up-automation"><span class="meta"><span class="cat">AI Automation</span></span><b>Lead Follow-Up Automation: Stop Losing Business to Slow Replies</b></a>
+        <a href="https://www.prismagentsolutions.com/blog/missed-calls-revenue-leak"><b>Why Your Missed Calls Are Your Biggest Revenue Leak</b><span class="meta" style="margin-top:10px"><span class="cat">AI Automation</span></span></a>
+        <a href="https://www.prismagentsolutions.com/blog/where-do-i-start-with-ai-for-my-business"><b>Where Do I Start with AI for My Business?</b><span class="meta" style="margin-top:10px"><span class="cat">AI Consulting for Small Business</span></span></a>
+        <a href="https://www.prismagentsolutions.com/blog/lead-follow-up-automation"><b>Lead Follow-Up Automation: Stop Losing Business to Slow Replies</b><span class="meta" style="margin-top:10px"><span class="cat">AI Automation</span></span></a>
       </div>
     </div>
   </section>
