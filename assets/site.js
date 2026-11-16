@@ -40,3 +40,13 @@ function openAria() {
 }
 document.querySelectorAll("[data-aria]").forEach(function (b) { b.addEventListener("click", function (e) { e.preventDefault(); openAria(); }); });
 document.querySelectorAll("[data-book]").forEach(function (a) { a.href = BOOKING; a.target = "_blank"; a.rel = "noopener"; });
+
+/* old homepage anchors still land somewhere sensible */
+(function () {
+  var alias = { services: "build", "how-we-work": "about", pricing: "start", assess: "contact", faq: "about", results: "proof", "what-we-build": "build" };
+  var h = location.hash.slice(1);
+  if (alias[h] && document.getElementById(alias[h]) && !document.getElementById(h)) {
+    history.replaceState(null, "", "#" + alias[h]);
+    addEventListener("load", function () { document.getElementById(alias[h]).scrollIntoView(); });
+  }
+})();
