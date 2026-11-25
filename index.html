@@ -71,10 +71,10 @@
 .tension { padding-bottom: clamp(3rem, 8vh, 6rem); }
 .tension .sc-wrap { display: grid; gap: clamp(3rem, 9vh, 7rem); }
 .tension h2 { margin: 0; max-width: 14ch; }
-.leak { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: var(--sc-6); align-items: start; padding-top: var(--sc-6); border-top: 1px solid var(--sc-hairline); }
-.leak:nth-of-type(2) { margin-left: 12%; }
-.leak:nth-of-type(3) { margin-left: 24%; }
-.leak h3 { margin: 0; font: 700 var(--sc-t-2xl)/1.05 var(--sc-font-display); letter-spacing: var(--sc-track-snug); text-wrap: balance; }
+.leak { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: var(--sc-6); align-items: start; padding-top: var(--sc-6); border-top: 1px solid var(--sc-hairline); }
+.leak:nth-of-type(2) { margin-left: 8%; }
+.leak:nth-of-type(3) { margin-left: 16%; }
+.leak h3 { margin: 0; font: 700 clamp(1.6rem, 1.1rem + 1.5vw, 2.5rem)/1.1 var(--sc-font-display); letter-spacing: var(--sc-track-snug); text-wrap: balance; }
 .leak p { margin: 0; color: var(--sc-ink-soft); max-width: 40ch; font-size: var(--sc-t-lg); line-height: 1.5; }
 .leak .time { display: block; font: 600 var(--sc-t-xs) var(--sc-font-text); letter-spacing: .08em; text-transform: uppercase; color: var(--amber); margin-bottom: var(--sc-3); }
 .tension .turnline { font: 700 var(--sc-t-2xl)/1.1 var(--sc-font-display); letter-spacing: var(--sc-track-snug); max-width: 22ch; margin: 0 0 0 auto; text-align: right; }
@@ -343,16 +343,16 @@
       <h2 class="sc-display sc-display--lg" data-sc-in data-sc-kinetic="lines">Sound familiar?</h2>
 
       <article class="leak" data-sc-in data-sc-stagger="90" data-night="1">
-        <div><h3>The report you rebuild every week.</h3></div>
-        <p><strong class="when">Every Thursday.</strong> Same numbers, same template, typed by hand against a deadline. It goes out under your name, typos and all.</p>
+        <div><h3>You rebuild the same report every Thursday.</h3></div>
+        <p>Same numbers, same template, typed by hand against a deadline. And it goes out with your name on it, typos and all.</p>
       </article>
       <article class="leak" data-sc-in data-sc-stagger="90" data-night="2">
-        <div><h3>The proposal that waits for you.</h3></div>
-        <p><strong class="when">Tuesday to Friday.</strong> The customer is ready on Tuesday. The proposal goes out Friday, when you finally get back to your desk. Some customers won't wait that long.</p>
+        <div><h3>Your customer said yes on Tuesday. The proposal went out Friday.</h3></div>
+        <p>That's when you finally got back to your desk. Some customers won't wait that long.</p>
       </article>
       <article class="leak" data-sc-in data-sc-stagger="90" data-night="3">
-        <div><h3>The lead that calls after you've gone home.</h3></div>
-        <p><strong class="when">8:12 PM.</strong> They found you, they called, they got voicemail. By morning they've booked whoever picked up.</p>
+        <div><h3>Somebody called at 8:12 last night and got your voicemail.</h3></div>
+        <p>They found you, they called, and nobody picked up. By morning they'd hired whoever did.</p>
       </article>
 
       <p class="turnline" data-sc-in data-night="4">Every one of these has a dollar number on it. <em>We find it first.</em></p>
